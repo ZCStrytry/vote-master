@@ -41,6 +41,7 @@
 	
 	<!-- Result Map-->
 	<resultMap id="LoginUser" type="com.jeecg.p3.system.vo.LoginUser" >
+		<result column="id" property="id" jdbcType="INTEGER"/>
 		<result column="user_id" property="userId" jdbcType="VARCHAR"/>
 		<result column="user_name" property="userName" jdbcType="VARCHAR"/>
 		<result column="password" property="password" jdbcType="VARCHAR"/>
@@ -321,6 +322,7 @@
                   ,jsu.last_edit_dt                  /* 上次修改日期 */ 
                   ,jsu.record_version                /* 版本号 */ 
                   ,jsu.openid                        /* openid*/ 
+                  ,jsu.password
 		   FROM   jw_system_user      AS jsu      /* 运营用户表; InnoDB free: 9216 kB */ 
 		   WHERE
 				id = #{id}				/* 序号 */ 

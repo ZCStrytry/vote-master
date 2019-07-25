@@ -151,7 +151,7 @@ function ajaxdoFormSubmit(formId) {
         	    	$('#formReturn').click();
         	    	parent.layer.close(index);
         	    });
-        		//location.reload();
+        		location.reload();
         	}else{
         		layeralert(data.msg,0);
         	}

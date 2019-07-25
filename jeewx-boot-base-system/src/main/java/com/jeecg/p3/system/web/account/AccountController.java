@@ -118,6 +118,7 @@ public class AccountController extends BaseController {
 			if (null != u) {
 				j.setSuccess(false);
 				j.setMsg("此账号已存在");
+				return j;
 			}
 			String userName = request.getParameter("userName");
 			String password = request.getParameter("password");
@@ -190,12 +191,12 @@ public class AccountController extends BaseController {
 			if (null != u) {
 				j.setSuccess(false);
 				j.setMsg("此账号已存在");
+				return j;
 			}
 			String userName = request.getParameter("userName");
 			String userType = request.getParameter("userType");
 			LoginUser user = (LoginUser) seesion.getAttribute(Constants.OPERATE_WEB_LOGIN_USER);
 			JwSystemUser jwSystemUser = new JwSystemUser();
-			jwSystemUser.setUserId(accountNo);
 			jwSystemUser.setUserName(userName);
 			jwSystemUser.setUserTyp(userType);
 			jwSystemUser.setUserId(accountNo);
@@ -258,6 +259,65 @@ public class AccountController extends BaseController {
 			j.setSuccess(false);
 			j.setMsg("重置密码失败");
 			log.error("重置密码出错", e);
+		}
+		return j;
+	}
+
+	/**
+	 * updatePwd
+	 * 
+	 * @return
+	 */
+	@GetMapping(value = "updatePwd")
+	public void getUpdatePwd(HttpServletResponse response, HttpServletRequest request, HttpSession seesion) {
+		try {
+			VelocityContext velocityContext = new VelocityContext();
+			String viewName = "system/account/account-update-pwd.vm";
+			ViewVelocity.view(request, response, viewName, velocityContext);
+		} catch (Exception e) {
+			log.error("出错", e);
+		}
+	}
+
+	/**
+	 * updatePwd
+	 * 
+	 * @return
+	 */
+	@PostMapping(value = "updatePwd")
+	@ResponseBody
+	public AjaxJson updatePwd(HttpServletResponse response, HttpServletRequest request, HttpSession seesion) {
+		AjaxJson j = new AjaxJson();
+		try {
+			LoginUser user = (LoginUser) seesion.getAttribute(Constants.OPERATE_WEB_LOGIN_USER);
+			Integer id = user.getId();
+			String password = request.getParameter("oldPassword");
+			String newPassword = request.getParameter("password");
+			if (StringUtil.isBlank(password) || StringUtil.isBlank(newPassword)) {
+				j.setSuccess(false);
+				j.setMsg("缺失参数");
+				return j;
+			}
+			JwSystemUser u = this.accountService.queryById(id.longValue());
+			String secrtPwd = MD5Util.MD5Encode(password, "utf-8");
+			if (null != u) {
+				if (!secrtPwd.equals(u.getPassword())) {
+					j.setSuccess(false);
+					j.setMsg("原始密码不正确");
+					return j;
+				}
+			}
+			JwSystemUser jwSystemUser = new JwSystemUser();
+			jwSystemUser.setEditor(user.getUserName());
+			jwSystemUser.setId(id.longValue());
+			jwSystemUser.setPassword(MD5Util.MD5Encode(newPassword, "utf-8"));
+			this.accountService.doEdit(jwSystemUser, null);
+			j.setSuccess(true);
+			j.setMsg("修改成功");
+		} catch (Exception e) {
+			j.setSuccess(false);
+			j.setMsg("修改失败");
+			log.error("修改出错", e);
 		}
 		return j;
 	}
