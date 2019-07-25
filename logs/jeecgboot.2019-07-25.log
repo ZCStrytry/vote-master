@@ -259,3 +259,342 @@
 2019-07-25 14:11:56.009 [http-nio-80-exec-4] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
 2019-07-25 14:12:01.421 [http-nio-80-exec-10] INFO  com.jeecg.p3.system.web.SystemController:158 - 登录验证成功：用户【admin】权限验证通过
 2019-07-25 14:12:04.257 [http-nio-80-exec-2] INFO  org.jeecgframework.p3.core.web.BaseController:35 -  back home
+2019-07-25 15:25:16.663 [main] INFO  com.jeecg.JeewxBootApplication:50 - Starting JeewxBootApplication on DESKTOP-F70DGLP with PID 12304 (D:\vote-master\vote-boot\jeewx-boot-base-system\target\classes started by 86176 in D:\vote-master\vote-boot\jeewx-boot-base-system)
+2019-07-25 15:25:16.672 [main] INFO  com.jeecg.JeewxBootApplication:675 - No active profile set, falling back to default profiles: default
+2019-07-25 15:25:21.058 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:90 - Tomcat initialized with port(s): 80 (http)
+2019-07-25 15:25:21.089 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-80"]
+2019-07-25 15:25:21.118 [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2019-07-25 15:25:21.119 [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-07-25 15:25:21.143 [main] INFO  org.apache.catalina.core.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_102\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_102/bin/server;C:/Program Files/Java/jre1.8.0_102/bin;C:/Program Files/Java/jre1.8.0_102/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;";C:\Program Files\Java\jdk1.8.0_102\bin;C:\Program Files\Java\jdk1.8.0_102\jre\bin;";C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;D:\Program Files (x86)\Svn\bin;D:\Program Files (x86)\Node\;D:\Program Files (x86)\Git\Git\cmd;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;D:\Program Files (x86)\eclipse;;.]
+2019-07-25 15:25:21.483 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeewx]:173 - Initializing Spring embedded WebApplicationContext
+2019-07-25 15:25:21.484 [main] INFO  org.springframework.web.context.ContextLoader:296 - Root WebApplicationContext: initialization completed in 4709 ms
+2019-07-25 15:25:21.577 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure:56 - Init DruidDataSource
+2019-07-25 15:25:22.557 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1003 - {dataSource-1} inited
+2019-07-25 15:25:24.303 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-25 15:25:24.390 [main] INFO  com.jeecg.p3.system.config.SystemConfigurer:55 - loginInterceptorExcludeUrls: /system/back/article/toIndex.do,/system/back/article/toArticle.do,/system/preSelectJwid.do,/system/back/home.do,/system/back/jwSystemAccountAPI/getUserAccountAmount.do,/back/backIndex/home.do
+2019-07-25 15:25:24.391 [main] INFO  com.jeecg.p3.system.config.SystemConfigurer:56 - accessSignInterceptorExcludeUrls: /api/cms/**,/cms/**,/wechatController.do,/weixinNewsController/goContent.do,/weixinLinksucai/link.do,/linksucai/link.do,/fx/mall/payCallBack.do,/newsController/getNewsClassify.do,/newsController/getNewslist.do,/CommonController/sendMsgCode.do
+2019-07-25 15:25:24.771 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2019-07-25 15:25:24.904 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-80"]
+2019-07-25 15:25:24.977 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 80 (http) with context path '/jeewx'
+2019-07-25 15:25:24.989 [main] INFO  com.jeecg.JeewxBootApplication:59 - Started JeewxBootApplication in 9.347 seconds (JVM running for 10.602)
+2019-07-25 15:25:24.995 [main] INFO  com.jeecg.JeewxBootApplication:27 - 
+----------------------------------------------------------
+	Application Jeewx-Boot is running! Access URLs:
+	Local: 		http://localhost:80/jeewx/
+	External: 	http://192.168.102.217:80/jeewx/
+	----------------------------------------------------------
+2019-07-25 15:27:05.937 [http-nio-80-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie:173 - A cookie header was received [1563844320,1563931251,1564017678; Hm_lpvt_6f6dcdf1cf6beff0de1b03f3e959c679=1564035125] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-07-25 15:27:05.960 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeewx]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-25 15:27:05.961 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-07-25 15:27:05.987 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:546 - Completed initialization in 26 ms
+2019-07-25 15:27:06.350 [http-nio-80-exec-1] INFO  com.jeecg.p3.system.web.SystemController:738 - 登录失败：用户【admin】验证码错误
+2019-07-25 15:27:12.333 [http-nio-80-exec-4] INFO  com.jeecg.p3.system.web.SystemController:158 - 登录验证成功：用户【admin】权限验证通过
+2019-07-25 15:27:15.579 [http-nio-80-exec-7] INFO  org.jeecgframework.p3.core.web.BaseController:35 -  back home
+2019-07-25 15:32:35.975 [http-nio-80-exec-5] INFO  org.jeecgframework.p3.core.web.BaseController:35 -  back home
+2019-07-25 15:32:41.767 [http-nio-80-exec-8] INFO  org.jeecgframework.p3.core.web.BaseController:176 - 初始化权限
+2019-07-25 15:32:42.000 [http-nio-80-exec-8] INFO  org.jeecgframework.p3.core.web.BaseController:186 - 初始化权限: [{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"5ef3fc9eace911e9b2a800163e0a7cea","name":"服务","nocheck":false,"open":true,"pId":"0","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"54c4f2acaceb11e9b2a800163e0a7cea","name":"账号","nocheck":false,"open":true,"pId":"0","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"c9e57ec7ae1711e9b2a800163e0a7cea","name":"设置","nocheck":false,"open":true,"pId":"0","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"2101","name":"用户管理","nocheck":false,"open":false,"pId":"21","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"210101","name":"新增用户","nocheck":false,"open":false,"pId":"2101","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"210201","name":"新增角色","nocheck":false,"open":false,"pId":"2102","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"210301","name":"新增权限","nocheck":false,"open":false,"pId":"2103","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"d1d99887aceb11e9b2a800163e0a7cea","name":"账号信息","nocheck":false,"open":true,"pId":"54c4f2acaceb11e9b2a800163e0a7cea","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"ee23607dec3d103696ca5352a33c439c","name":"关注用户信息","nocheck":false,"open":true,"pId":"d931c662ec3d103696ca5352a33c439c","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"2537b375ad2411e9b2a800163e0a7cea","name":"添加账户","nocheck":false,"open":false,"pId":"d1d99887aceb11e9b2a800163e0a7cea","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"f5ab2658ec3c103696ca5352a33c439c","name":"基础配置","nocheck":false,"open":true,"pId":"9d552546c3d011e8aa5852540003411a","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"3c6fe69cc26011e8aa5852540003411a","name":"站点管理","nocheck":false,"open":true,"pId":"27a9519ec26011e8aa5852540003411a","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"9d552546c3d011e8aa5852540003411a","name":"公众号管理","nocheck":false,"open":true,"pId":"0","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"a37d189dec3d103696ca5352a33c439c","name":"文本素材","nocheck":false,"open":true,"pId":"92c06cd8ec3d103696ca5352a33c439c","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"0fff2fc4ec3d103696ca5352a33c439c","name":"公众号管理","nocheck":false,"open":true,"pId":"f5ab2658ec3c103696ca5352a33c439c","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"db1e48d0ace911e9b2a800163e0a7cea","name":"概况","nocheck":false,"open":true,"pId":"5ef3fc9eace911e9b2a800163e0a7cea","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"210102","name":"编辑用户","nocheck":false,"open":false,"pId":"2101","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"2102","name":"角色管理","nocheck":false,"open":false,"pId":"21","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"210202","name":"编辑角色","nocheck":false,"open":false,"pId":"2102","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"2d8bf581ec3d103696ca5352a33c439c","name":"关注欢迎语","nocheck":false,"open":true,"pId":"f5ab2658ec3c103696ca5352a33c439c","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"210302","name":"编辑权限","nocheck":false,"open":false,"pId":"2103","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"4f388b42c3bb11e8aa5852540003411a","name":"广告管理","nocheck":false,"open":true,"pId":"27a9519ec26011e8aa5852540003411a","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"01373749acea11e9b2a800163e0a7cea","name":"活动管理","nocheck":false,"open":true,"pId":"5ef3fc9eace911e9b2a800163e0a7cea","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"d99d5fecaceb11e9b2a800163e0a7cea","name":"修改密码","nocheck":false,"open":true,"pId":"54c4f2acaceb11e9b2a800163e0a7cea","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"e478c497adf811e9b2a800163e0a7cea","name":"修改信息","nocheck":false,"open":false,"pId":"d1d99887aceb11e9b2a800163e0a7cea","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"92c06cd8ec3d103696ca5352a33c439c","name":"素材管理","nocheck":false,"open":true,"pId":"9d552546c3d011e8aa5852540003411a","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"b0b96e3dec3d103696ca5352a33c439c","name":"图文素材","nocheck":false,"open":true,"pId":"92c06cd8ec3d103696ca5352a33c439c","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"210203","name":"角色授权","nocheck":false,"open":false,"pId":"2102","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"2103","name":"菜单管理","nocheck":false,"open":false,"pId":"21","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"2c726f25adfc11e9b2a800163e0a7cea","name":"删除信息","nocheck":false,"open":false,"pId":"d1d99887aceb11e9b2a800163e0a7cea","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"d931c662ec3d103696ca5352a33c439c","name":"用户管理","nocheck":false,"open":true,"pId":"9d552546c3d011e8aa5852540003411a","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"6370158ac3bb11e8aa5852540003411a","name":"栏目管理","nocheck":false,"open":true,"pId":"27a9519ec26011e8aa5852540003411a","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"0f6131e5acea11e9b2a800163e0a7cea","name":"发布活动","nocheck":false,"open":true,"pId":"5ef3fc9eace911e9b2a800163e0a7cea","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"4f7ad75eec3d103696ca5352a33c439c","name":"未识别回复语","nocheck":false,"open":true,"pId":"f5ab2658ec3c103696ca5352a33c439c","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"f3bcd2bb9ec511e883d43ca0672e915d","name":"用户标签管理","nocheck":false,"open":true,"pId":"d931c662ec3d103696ca5352a33c439c","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"210204","name":"删除角色","nocheck":false,"open":false,"pId":"2102","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"5ce00208adfd11e9b2a800163e0a7cea","name":"重置密码","nocheck":false,"open":false,"pId":"d1d99887aceb11e9b2a800163e0a7cea","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"2104","name":"项目管理","nocheck":false,"open":false,"pId":"21","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"736e3bbac3bb11e8aa5852540003411a","name":"文章管理","nocheck":false,"open":true,"pId":"27a9519ec26011e8aa5852540003411a","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"211405c0acea11e9b2a800163e0a7cea","name":"今日开始","nocheck":false,"open":true,"pId":"5ef3fc9eace911e9b2a800163e0a7cea","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"5d2c6911ec3d103696ca5352a33c439c","name":"关键字管理","nocheck":false,"open":true,"pId":"f5ab2658ec3c103696ca5352a33c439c","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"0082475aec3e103696ca5352a33c439c","name":"消息管理","nocheck":false,"open":true,"pId":"d931c662ec3d103696ca5352a33c439c","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"2aeb0f3eacea11e9b2a800163e0a7cea","name":"今日结束","nocheck":false,"open":true,"pId":"5ef3fc9eace911e9b2a800163e0a7cea","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"70cbf443ec3d103696ca5352a33c439c","name":"自定义菜单","nocheck":false,"open":true,"pId":"f5ab2658ec3c103696ca5352a33c439c","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"2106","name":"404配置","nocheck":false,"open":false,"pId":"21","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"346c8eceacea11e9b2a800163e0a7cea","name":"未开始","nocheck":false,"open":true,"pId":"5ef3fc9eace911e9b2a800163e0a7cea","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"2107","name":"首页配置","nocheck":false,"open":false,"pId":"21","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"3a454278acea11e9b2a800163e0a7cea","name":"进行中","nocheck":false,"open":true,"pId":"5ef3fc9eace911e9b2a800163e0a7cea","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"3ff8f971acea11e9b2a800163e0a7cea","name":"已结束","nocheck":false,"open":true,"pId":"5ef3fc9eace911e9b2a800163e0a7cea","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"aa735943eb4410368c0028dacd75e20f","name":"抽奖活动","nocheck":false,"open":true,"pId":"0","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"960106","name":"素材链接","nocheck":false,"open":true,"pId":"21","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"27a9519ec26011e8aa5852540003411a","name":"小程序官网","nocheck":false,"open":true,"pId":"0","parent":false},{"checked":true,"chkDisabled":false,"doCheck":false,"halfCheck":false,"id":"21","name":"系统管理","nocheck":false,"open":true,"pId":"0","parent":false}]
+2019-07-25 15:32:50.384 [http-nio-80-exec-5] INFO  org.jeecgframework.p3.core.web.BaseController:203 - 编辑角色权限
+2019-07-25 15:32:51.696 [http-nio-80-exec-5] INFO  org.jeecgframework.p3.core.web.BaseController:221 - 编辑角色权限完成 
+2019-07-25 15:32:59.634 [http-nio-80-exec-10] INFO  com.jeecg.p3.system.web.SystemController:158 - 登录验证成功：用户【admin】权限验证通过
+2019-07-25 15:33:02.452 [http-nio-80-exec-9] INFO  org.jeecgframework.p3.core.web.BaseController:35 -  back home
+2019-07-25 15:33:35.144 [http-nio-80-exec-7] INFO  org.jeecgframework.p3.core.web.BaseController:35 -  back home
+2019-07-25 15:34:17.313 [http-nio-80-exec-5] INFO  org.jeecgframework.p3.core.web.BaseController:35 -  back home
+2019-07-25 15:34:23.036 [http-nio-80-exec-5] INFO  org.jeecgframework.p3.core.web.BaseController:35 -  back home
+2019-07-25 15:41:35.671 [http-nio-80-exec-1] INFO  com.jeecg.p3.system.web.SystemController:159 - 登录验证成功：用户【admin】权限验证通过
+2019-07-25 15:41:35.694 [http-nio-80-exec-9] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:86 - ---------------SignInterceptor--------------没有权限---requestPath=system/login
+2019-07-25 15:41:35.695 [http-nio-80-exec-9] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:168 - ---------------projectPath--------------system
+2019-07-25 15:41:35.713 [http-nio-80-exec-9] INFO  c.j.p3.dict.service.impl.SystemActTxtServiceImpl:66 - ------------------------getSysErrorConfig-----------------system
+2019-07-25 15:41:35.726 [http-nio-80-exec-9] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:188 - ---------------redirectUrl404--------------/jeewx/system/noAuth.do
+2019-07-25 15:48:50.167 [main] INFO  com.jeecg.JeewxBootApplication:50 - Starting JeewxBootApplication on DESKTOP-F70DGLP with PID 10608 (D:\vote-master\vote-boot\jeewx-boot-base-system\target\classes started by 86176 in D:\vote-master\vote-boot\jeewx-boot-base-system)
+2019-07-25 15:48:50.177 [main] INFO  com.jeecg.JeewxBootApplication:675 - No active profile set, falling back to default profiles: default
+2019-07-25 15:48:53.646 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:90 - Tomcat initialized with port(s): 80 (http)
+2019-07-25 15:48:53.684 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-80"]
+2019-07-25 15:48:53.718 [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2019-07-25 15:48:53.720 [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-07-25 15:48:53.740 [main] INFO  org.apache.catalina.core.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_102\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_102/bin/server;C:/Program Files/Java/jre1.8.0_102/bin;C:/Program Files/Java/jre1.8.0_102/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;";C:\Program Files\Java\jdk1.8.0_102\bin;C:\Program Files\Java\jdk1.8.0_102\jre\bin;";C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;D:\Program Files (x86)\Svn\bin;D:\Program Files (x86)\Node\;D:\Program Files (x86)\Git\Git\cmd;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;D:\Program Files (x86)\eclipse;;.]
+2019-07-25 15:48:53.962 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeewx]:173 - Initializing Spring embedded WebApplicationContext
+2019-07-25 15:48:53.963 [main] INFO  org.springframework.web.context.ContextLoader:296 - Root WebApplicationContext: initialization completed in 3673 ms
+2019-07-25 15:48:54.053 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure:56 - Init DruidDataSource
+2019-07-25 15:48:55.053 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1003 - {dataSource-1} inited
+2019-07-25 15:48:56.788 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-25 15:48:56.864 [main] INFO  com.jeecg.p3.system.config.SystemConfigurer:55 - loginInterceptorExcludeUrls: /system/back/article/toIndex.do,/system/back/article/toArticle.do,/system/preSelectJwid.do,/system/back/home.do,/system/back/jwSystemAccountAPI/getUserAccountAmount.do,/back/backIndex/home.do
+2019-07-25 15:48:56.865 [main] INFO  com.jeecg.p3.system.config.SystemConfigurer:56 - accessSignInterceptorExcludeUrls: /api/cms/**,/cms/**,/wechatController.do,/weixinNewsController/goContent.do,/weixinLinksucai/link.do,/linksucai/link.do,/fx/mall/payCallBack.do,/newsController/getNewsClassify.do,/newsController/getNewslist.do,/CommonController/sendMsgCode.do
+2019-07-25 15:48:57.254 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2019-07-25 15:48:57.360 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-80"]
+2019-07-25 15:48:57.419 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 80 (http) with context path '/jeewx'
+2019-07-25 15:48:57.436 [main] INFO  com.jeecg.JeewxBootApplication:59 - Started JeewxBootApplication in 8.417 seconds (JVM running for 9.574)
+2019-07-25 15:48:57.443 [main] INFO  com.jeecg.JeewxBootApplication:27 - 
+----------------------------------------------------------
+	Application Jeewx-Boot is running! Access URLs:
+	Local: 		http://localhost:80/jeewx/
+	External: 	http://192.168.102.217:80/jeewx/
+	----------------------------------------------------------
+2019-07-25 15:49:14.091 [http-nio-80-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie:173 - A cookie header was received [1563844320,1563931251,1564017678; Hm_lpvt_6f6dcdf1cf6beff0de1b03f3e959c679=1564040063] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-07-25 15:49:14.125 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeewx]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-25 15:49:14.126 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-07-25 15:49:14.153 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:546 - Completed initialization in 26 ms
+2019-07-25 15:49:20.236 [http-nio-80-exec-6] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:86 - ---------------SignInterceptor--------------没有权限---requestPath=system
+2019-07-25 15:49:23.338 [http-nio-80-exec-8] INFO  com.jeecg.p3.system.web.SystemController:721 - 登录失败：用户【null】验证码错误
+2019-07-25 15:50:02.874 [http-nio-80-exec-10] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:86 - ---------------SignInterceptor--------------没有权限---requestPath=system/checkUser
+2019-07-25 15:50:02.876 [http-nio-80-exec-10] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:168 - ---------------projectPath--------------system
+2019-07-25 15:50:02.891 [http-nio-80-exec-10] INFO  c.j.p3.dict.service.impl.SystemActTxtServiceImpl:66 - ------------------------getSysErrorConfig-----------------system
+2019-07-25 15:50:02.917 [http-nio-80-exec-10] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:188 - ---------------redirectUrl404--------------/jeewx/system/noAuth.do
+2019-07-25 15:50:06.968 [http-nio-80-exec-3] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:86 - ---------------SignInterceptor--------------没有权限---requestPath=system/checkUser
+2019-07-25 15:50:06.969 [http-nio-80-exec-3] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:168 - ---------------projectPath--------------system
+2019-07-25 15:50:06.970 [http-nio-80-exec-3] INFO  c.j.p3.dict.service.impl.SystemActTxtServiceImpl:66 - ------------------------getSysErrorConfig-----------------system
+2019-07-25 15:50:06.997 [http-nio-80-exec-3] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:188 - ---------------redirectUrl404--------------/jeewx/system/noAuth.do
+2019-07-25 15:54:01.675 [main] INFO  com.jeecg.JeewxBootApplication:50 - Starting JeewxBootApplication on DESKTOP-F70DGLP with PID 14120 (D:\vote-master\vote-boot\jeewx-boot-base-system\target\classes started by 86176 in D:\vote-master\vote-boot\jeewx-boot-base-system)
+2019-07-25 15:54:01.684 [main] INFO  com.jeecg.JeewxBootApplication:675 - No active profile set, falling back to default profiles: default
+2019-07-25 15:54:05.043 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:90 - Tomcat initialized with port(s): 80 (http)
+2019-07-25 15:54:05.075 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-80"]
+2019-07-25 15:54:05.112 [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2019-07-25 15:54:05.113 [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-07-25 15:54:05.134 [main] INFO  org.apache.catalina.core.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_102\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_102/bin/server;C:/Program Files/Java/jre1.8.0_102/bin;C:/Program Files/Java/jre1.8.0_102/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;";C:\Program Files\Java\jdk1.8.0_102\bin;C:\Program Files\Java\jdk1.8.0_102\jre\bin;";C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;D:\Program Files (x86)\Svn\bin;D:\Program Files (x86)\Node\;D:\Program Files (x86)\Git\Git\cmd;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;D:\Program Files (x86)\eclipse;;.]
+2019-07-25 15:54:05.510 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeewx]:173 - Initializing Spring embedded WebApplicationContext
+2019-07-25 15:54:05.511 [main] INFO  org.springframework.web.context.ContextLoader:296 - Root WebApplicationContext: initialization completed in 3728 ms
+2019-07-25 15:54:05.604 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure:56 - Init DruidDataSource
+2019-07-25 15:54:06.498 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1003 - {dataSource-1} inited
+2019-07-25 15:54:08.357 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-25 15:54:08.433 [main] INFO  com.jeecg.p3.system.config.SystemConfigurer:55 - loginInterceptorExcludeUrls: /system/back/article/toIndex.do,/system/back/article/toArticle.do,/system/preSelectJwid.do,/system/back/home.do,/system/back/jwSystemAccountAPI/getUserAccountAmount.do,/back/backIndex/home.do
+2019-07-25 15:54:08.433 [main] INFO  com.jeecg.p3.system.config.SystemConfigurer:56 - accessSignInterceptorExcludeUrls: /api/cms/**,/cms/**,/wechatController.do,/weixinNewsController/goContent.do,/weixinLinksucai/link.do,/linksucai/link.do,/fx/mall/payCallBack.do,/newsController/getNewsClassify.do,/newsController/getNewslist.do,/CommonController/sendMsgCode.do
+2019-07-25 15:54:08.802 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2019-07-25 15:54:08.912 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-80"]
+2019-07-25 15:54:08.977 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 80 (http) with context path '/jeewx'
+2019-07-25 15:54:08.988 [main] INFO  com.jeecg.JeewxBootApplication:59 - Started JeewxBootApplication in 8.268 seconds (JVM running for 9.42)
+2019-07-25 15:54:08.993 [main] INFO  com.jeecg.JeewxBootApplication:27 - 
+----------------------------------------------------------
+	Application Jeewx-Boot is running! Access URLs:
+	Local: 		http://localhost:80/jeewx/
+	External: 	http://192.168.102.217:80/jeewx/
+	----------------------------------------------------------
+2019-07-25 15:54:16.934 [http-nio-80-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie:173 - A cookie header was received [1563844320,1563931251,1564017678; Hm_lpvt_6f6dcdf1cf6beff0de1b03f3e959c679=1564040063] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-07-25 15:54:16.958 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeewx]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-25 15:54:16.959 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-07-25 15:54:16.987 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:546 - Completed initialization in 28 ms
+2019-07-25 15:54:17.347 [http-nio-80-exec-1] INFO  com.jeecg.p3.system.web.SystemController:720 - 登录失败：用户【null】验证码错误
+2019-07-25 15:54:17.351 [http-nio-80-exec-1] INFO  com.jeecg.p3.system.web.SystemController:721 - 登录失败：用户【null】java.lang.RuntimeException: 验证码错误
+2019-07-25 15:54:26.171 [http-nio-80-exec-2] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:86 - ---------------SignInterceptor--------------没有权限---requestPath=system/checkUser
+2019-07-25 15:54:26.172 [http-nio-80-exec-2] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:168 - ---------------projectPath--------------system
+2019-07-25 15:54:26.192 [http-nio-80-exec-2] INFO  c.j.p3.dict.service.impl.SystemActTxtServiceImpl:66 - ------------------------getSysErrorConfig-----------------system
+2019-07-25 15:54:26.211 [http-nio-80-exec-2] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:187 - ---------------redirectUrl404--------------/jeewx/system/noAuth.do
+2019-07-25 15:54:39.149 [http-nio-80-exec-7] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:86 - ---------------SignInterceptor--------------没有权限---requestPath=system/checkUser
+2019-07-25 15:54:39.150 [http-nio-80-exec-7] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:168 - ---------------projectPath--------------system
+2019-07-25 15:54:39.150 [http-nio-80-exec-7] INFO  c.j.p3.dict.service.impl.SystemActTxtServiceImpl:66 - ------------------------getSysErrorConfig-----------------system
+2019-07-25 15:54:39.167 [http-nio-80-exec-7] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:187 - ---------------redirectUrl404--------------/jeewx/system/noAuth.do
+2019-07-25 15:57:39.393 [main] INFO  com.jeecg.JeewxBootApplication:50 - Starting JeewxBootApplication on DESKTOP-F70DGLP with PID 13560 (D:\vote-master\vote-boot\jeewx-boot-base-system\target\classes started by 86176 in D:\vote-master\vote-boot\jeewx-boot-base-system)
+2019-07-25 15:57:39.403 [main] INFO  com.jeecg.JeewxBootApplication:675 - No active profile set, falling back to default profiles: default
+2019-07-25 15:57:43.272 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:90 - Tomcat initialized with port(s): 80 (http)
+2019-07-25 15:57:43.308 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-80"]
+2019-07-25 15:57:43.341 [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2019-07-25 15:57:43.344 [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-07-25 15:57:43.368 [main] INFO  org.apache.catalina.core.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_102\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_102/bin/server;C:/Program Files/Java/jre1.8.0_102/bin;C:/Program Files/Java/jre1.8.0_102/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;";C:\Program Files\Java\jdk1.8.0_102\bin;C:\Program Files\Java\jdk1.8.0_102\jre\bin;";C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;D:\Program Files (x86)\Svn\bin;D:\Program Files (x86)\Node\;D:\Program Files (x86)\Git\Git\cmd;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;D:\Program Files (x86)\eclipse;;.]
+2019-07-25 15:57:43.742 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeewx]:173 - Initializing Spring embedded WebApplicationContext
+2019-07-25 15:57:43.744 [main] INFO  org.springframework.web.context.ContextLoader:296 - Root WebApplicationContext: initialization completed in 4235 ms
+2019-07-25 15:57:43.834 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure:56 - Init DruidDataSource
+2019-07-25 15:57:44.695 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1003 - {dataSource-1} inited
+2019-07-25 15:57:46.412 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-25 15:57:46.490 [main] INFO  com.jeecg.p3.system.config.SystemConfigurer:55 - loginInterceptorExcludeUrls: /system/back/article/toIndex.do,/system/back/article/toArticle.do,/system/preSelectJwid.do,/system/back/home.do,/system/back/jwSystemAccountAPI/getUserAccountAmount.do,/back/backIndex/home.do
+2019-07-25 15:57:46.491 [main] INFO  com.jeecg.p3.system.config.SystemConfigurer:56 - accessSignInterceptorExcludeUrls: /api/cms/**,/cms/**,/wechatController.do,/weixinNewsController/goContent.do,/weixinLinksucai/link.do,/linksucai/link.do,/fx/mall/payCallBack.do,/newsController/getNewsClassify.do,/newsController/getNewslist.do,/CommonController/sendMsgCode.do
+2019-07-25 15:57:46.836 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2019-07-25 15:57:46.943 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-80"]
+2019-07-25 15:57:47.010 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 80 (http) with context path '/jeewx'
+2019-07-25 15:57:47.023 [main] INFO  com.jeecg.JeewxBootApplication:59 - Started JeewxBootApplication in 8.922 seconds (JVM running for 10.234)
+2019-07-25 15:57:47.029 [main] INFO  com.jeecg.JeewxBootApplication:27 - 
+----------------------------------------------------------
+	Application Jeewx-Boot is running! Access URLs:
+	Local: 		http://localhost:80/jeewx/
+	External: 	http://192.168.102.217:80/jeewx/
+	----------------------------------------------------------
+2019-07-25 15:57:50.012 [http-nio-80-exec-2] INFO  org.apache.tomcat.util.http.parser.Cookie:173 - A cookie header was received [1563844320,1563931251,1564017678; Hm_lpvt_6f6dcdf1cf6beff0de1b03f3e959c679=1564040063] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-07-25 15:57:50.034 [http-nio-80-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeewx]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-25 15:57:50.035 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-07-25 15:57:50.055 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet:546 - Completed initialization in 20 ms
+2019-07-25 15:57:50.349 [http-nio-80-exec-2] INFO  com.jeecg.p3.system.web.SystemController:706 - 登录失败：用户【null】验证码错误
+2019-07-25 15:57:50.351 [http-nio-80-exec-2] INFO  com.jeecg.p3.system.web.SystemController:707 - 登录失败：用户【null】java.lang.RuntimeException: 验证码错误
+2019-07-25 15:57:55.125 [http-nio-80-exec-3] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:86 - ---------------SignInterceptor--------------没有权限---requestPath=system/checkUser
+2019-07-25 15:57:55.126 [http-nio-80-exec-3] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:168 - ---------------projectPath--------------system
+2019-07-25 15:57:55.139 [http-nio-80-exec-3] INFO  c.j.p3.dict.service.impl.SystemActTxtServiceImpl:66 - ------------------------getSysErrorConfig-----------------system
+2019-07-25 15:57:55.161 [http-nio-80-exec-3] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:187 - ---------------redirectUrl404--------------/jeewx/system/noAuth.do
+2019-07-25 15:58:32.540 [http-nio-80-exec-10] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:86 - ---------------SignInterceptor--------------没有权限---requestPath=system/checkUser
+2019-07-25 15:58:32.541 [http-nio-80-exec-10] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:168 - ---------------projectPath--------------system
+2019-07-25 15:58:32.542 [http-nio-80-exec-10] INFO  c.j.p3.dict.service.impl.SystemActTxtServiceImpl:66 - ------------------------getSysErrorConfig-----------------system
+2019-07-25 15:58:32.557 [http-nio-80-exec-10] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:187 - ---------------redirectUrl404--------------/jeewx/system/noAuth.do
+2019-07-25 15:58:41.968 [http-nio-80-exec-5] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:86 - ---------------SignInterceptor--------------没有权限---requestPath=system/checkUser
+2019-07-25 15:58:41.969 [http-nio-80-exec-5] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:168 - ---------------projectPath--------------system
+2019-07-25 15:58:41.970 [http-nio-80-exec-5] INFO  c.j.p3.dict.service.impl.SystemActTxtServiceImpl:66 - ------------------------getSysErrorConfig-----------------system
+2019-07-25 15:58:41.985 [http-nio-80-exec-5] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:187 - ---------------redirectUrl404--------------/jeewx/system/noAuth.do
+2019-07-25 16:00:58.771 [http-nio-80-exec-9] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:86 - ---------------SignInterceptor--------------没有权限---requestPath=system/checkUser
+2019-07-25 16:00:58.772 [http-nio-80-exec-9] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:168 - ---------------projectPath--------------system
+2019-07-25 16:00:58.774 [http-nio-80-exec-9] INFO  c.j.p3.dict.service.impl.SystemActTxtServiceImpl:66 - ------------------------getSysErrorConfig-----------------system
+2019-07-25 16:00:58.818 [http-nio-80-exec-9] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:187 - ---------------redirectUrl404--------------/jeewx/system/noAuth.do
+2019-07-25 16:09:43.110 [main] INFO  com.jeecg.JeewxBootApplication:50 - Starting JeewxBootApplication on DESKTOP-F70DGLP with PID 16016 (D:\vote-master\vote-boot\jeewx-boot-base-system\target\classes started by 86176 in D:\vote-master\vote-boot\jeewx-boot-base-system)
+2019-07-25 16:09:43.123 [main] INFO  com.jeecg.JeewxBootApplication:675 - No active profile set, falling back to default profiles: default
+2019-07-25 16:09:46.297 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:90 - Tomcat initialized with port(s): 80 (http)
+2019-07-25 16:09:46.327 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-80"]
+2019-07-25 16:09:46.356 [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2019-07-25 16:09:46.357 [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-07-25 16:09:46.384 [main] INFO  org.apache.catalina.core.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_102\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_102/bin/server;C:/Program Files/Java/jre1.8.0_102/bin;C:/Program Files/Java/jre1.8.0_102/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;";C:\Program Files\Java\jdk1.8.0_102\bin;C:\Program Files\Java\jdk1.8.0_102\jre\bin;";C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;D:\Program Files (x86)\Svn\bin;D:\Program Files (x86)\Node\;D:\Program Files (x86)\Git\Git\cmd;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;D:\Program Files (x86)\eclipse;;.]
+2019-07-25 16:09:46.718 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeewx]:173 - Initializing Spring embedded WebApplicationContext
+2019-07-25 16:09:46.719 [main] INFO  org.springframework.web.context.ContextLoader:296 - Root WebApplicationContext: initialization completed in 3458 ms
+2019-07-25 16:09:46.803 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure:56 - Init DruidDataSource
+2019-07-25 16:09:47.728 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1003 - {dataSource-1} inited
+2019-07-25 16:09:49.791 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-25 16:09:49.903 [main] INFO  com.jeecg.p3.system.config.SystemConfigurer:55 - loginInterceptorExcludeUrls: /system/back/article/toIndex.do,/system/back/article/toArticle.do,/system/preSelectJwid.do,/system/back/home.do,/system/back/jwSystemAccountAPI/getUserAccountAmount.do,/back/backIndex/home.do
+2019-07-25 16:09:49.904 [main] INFO  com.jeecg.p3.system.config.SystemConfigurer:56 - accessSignInterceptorExcludeUrls: /api/cms/**,/cms/**,/wechatController.do,/weixinNewsController/goContent.do,/weixinLinksucai/link.do,/linksucai/link.do,/fx/mall/payCallBack.do,/newsController/getNewsClassify.do,/newsController/getNewslist.do,/CommonController/sendMsgCode.do
+2019-07-25 16:09:50.296 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2019-07-25 16:09:50.417 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-80"]
+2019-07-25 16:09:50.488 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 80 (http) with context path '/jeewx'
+2019-07-25 16:09:50.497 [main] INFO  com.jeecg.JeewxBootApplication:59 - Started JeewxBootApplication in 8.636 seconds (JVM running for 9.833)
+2019-07-25 16:09:50.506 [main] INFO  com.jeecg.JeewxBootApplication:27 - 
+----------------------------------------------------------
+	Application Jeewx-Boot is running! Access URLs:
+	Local: 		http://localhost:80/jeewx/
+	External: 	http://192.168.102.217:80/jeewx/
+	----------------------------------------------------------
+2019-07-25 16:09:50.717 [http-nio-80-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie:173 - A cookie header was received [1563844320,1563931251,1564017678; Hm_lpvt_6f6dcdf1cf6beff0de1b03f3e959c679=1564040063] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-07-25 16:09:50.736 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeewx]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-25 16:09:50.737 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-07-25 16:09:50.753 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:546 - Completed initialization in 15 ms
+2019-07-25 16:09:56.652 [http-nio-80-exec-1] INFO  com.jeecg.p3.system.web.SystemController:738 - 登录失败：用户【null】验证码错误
+2019-07-25 16:10:04.028 [http-nio-80-exec-10] INFO  com.jeecg.p3.system.web.SystemController:158 - 登录验证成功：用户【admin】权限验证通过
+2019-07-25 16:10:04.156 [http-nio-80-exec-8] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:86 - ---------------SignInterceptor--------------没有权限---requestPath=system/login
+2019-07-25 16:10:04.158 [http-nio-80-exec-8] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:168 - ---------------projectPath--------------system
+2019-07-25 16:10:04.169 [http-nio-80-exec-8] INFO  c.j.p3.dict.service.impl.SystemActTxtServiceImpl:66 - ------------------------getSysErrorConfig-----------------system
+2019-07-25 16:10:04.185 [http-nio-80-exec-8] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:187 - ---------------redirectUrl404--------------/jeewx/system/noAuth.do
+2019-07-25 16:10:22.556 [http-nio-80-exec-9] INFO  com.jeecg.p3.system.web.SystemController:738 - 登录失败：用户【null】验证码错误
+2019-07-25 16:10:52.735 [http-nio-80-exec-3] INFO  com.jeecg.p3.system.web.SystemController:158 - 登录验证成功：用户【admin】权限验证通过
+2019-07-25 16:11:15.908 [http-nio-80-exec-6] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:86 - ---------------SignInterceptor--------------没有权限---requestPath=system/login
+2019-07-25 16:11:15.910 [http-nio-80-exec-6] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:168 - ---------------projectPath--------------system
+2019-07-25 16:11:15.911 [http-nio-80-exec-6] INFO  c.j.p3.dict.service.impl.SystemActTxtServiceImpl:66 - ------------------------getSysErrorConfig-----------------system
+2019-07-25 16:11:15.926 [http-nio-80-exec-6] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:187 - ---------------redirectUrl404--------------/jeewx/system/noAuth.do
+2019-07-25 16:11:41.143 [main] INFO  com.jeecg.JeewxBootApplication:50 - Starting JeewxBootApplication on DESKTOP-F70DGLP with PID 11808 (D:\vote-master\vote-boot\jeewx-boot-base-system\target\classes started by 86176 in D:\vote-master\vote-boot\jeewx-boot-base-system)
+2019-07-25 16:11:41.153 [main] INFO  com.jeecg.JeewxBootApplication:675 - No active profile set, falling back to default profiles: default
+2019-07-25 16:11:44.394 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:90 - Tomcat initialized with port(s): 80 (http)
+2019-07-25 16:11:44.428 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-80"]
+2019-07-25 16:11:44.470 [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2019-07-25 16:11:44.474 [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-07-25 16:11:44.511 [main] INFO  org.apache.catalina.core.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_102\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_102/bin/server;C:/Program Files/Java/jre1.8.0_102/bin;C:/Program Files/Java/jre1.8.0_102/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;";C:\Program Files\Java\jdk1.8.0_102\bin;C:\Program Files\Java\jdk1.8.0_102\jre\bin;";C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;D:\Program Files (x86)\Svn\bin;D:\Program Files (x86)\Node\;D:\Program Files (x86)\Git\Git\cmd;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;D:\Program Files (x86)\eclipse;;.]
+2019-07-25 16:11:44.883 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeewx]:173 - Initializing Spring embedded WebApplicationContext
+2019-07-25 16:11:44.885 [main] INFO  org.springframework.web.context.ContextLoader:296 - Root WebApplicationContext: initialization completed in 3621 ms
+2019-07-25 16:11:44.968 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure:56 - Init DruidDataSource
+2019-07-25 16:11:45.743 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1003 - {dataSource-1} inited
+2019-07-25 16:11:47.357 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-25 16:11:47.437 [main] INFO  com.jeecg.p3.system.config.SystemConfigurer:55 - loginInterceptorExcludeUrls: /system/back/article/toIndex.do,/system/back/article/toArticle.do,/system/preSelectJwid.do,/system/back/home.do,/system/back/jwSystemAccountAPI/getUserAccountAmount.do,/back/backIndex/home.do
+2019-07-25 16:11:47.438 [main] INFO  com.jeecg.p3.system.config.SystemConfigurer:56 - accessSignInterceptorExcludeUrls: /api/cms/**,/cms/**,/wechatController.do,/weixinNewsController/goContent.do,/weixinLinksucai/link.do,/linksucai/link.do,/fx/mall/payCallBack.do,/newsController/getNewsClassify.do,/newsController/getNewslist.do,/CommonController/sendMsgCode.do
+2019-07-25 16:11:47.813 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2019-07-25 16:11:47.919 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-80"]
+2019-07-25 16:11:47.977 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 80 (http) with context path '/jeewx'
+2019-07-25 16:11:47.984 [main] INFO  com.jeecg.JeewxBootApplication:59 - Started JeewxBootApplication in 7.825 seconds (JVM running for 9.021)
+2019-07-25 16:11:47.991 [main] INFO  com.jeecg.JeewxBootApplication:27 - 
+----------------------------------------------------------
+	Application Jeewx-Boot is running! Access URLs:
+	Local: 		http://localhost:80/jeewx/
+	External: 	http://192.168.102.217:80/jeewx/
+	----------------------------------------------------------
+2019-07-25 16:11:51.552 [http-nio-80-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie:173 - A cookie header was received [1563844320,1563931251,1564017678; Hm_lpvt_6f6dcdf1cf6beff0de1b03f3e959c679=1564040063] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-07-25 16:11:51.582 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeewx]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-25 16:11:51.583 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-07-25 16:11:51.607 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:546 - Completed initialization in 23 ms
+2019-07-25 16:11:51.927 [http-nio-80-exec-1] INFO  com.jeecg.p3.system.web.SystemController:738 - 登录失败：用户【null】验证码错误
+2019-07-25 16:11:56.755 [http-nio-80-exec-3] INFO  com.jeecg.p3.system.web.SystemController:158 - 登录验证成功：用户【admin】权限验证通过
+2019-07-25 16:11:56.923 [http-nio-80-exec-2] INFO  com.jeecg.p3.system.web.SystemController:738 - 登录失败：用户【admin】微信公众号为空
+2019-07-25 16:13:18.041 [main] INFO  com.jeecg.JeewxBootApplication:50 - Starting JeewxBootApplication on DESKTOP-F70DGLP with PID 13572 (D:\vote-master\vote-boot\jeewx-boot-base-system\target\classes started by 86176 in D:\vote-master\vote-boot\jeewx-boot-base-system)
+2019-07-25 16:13:18.050 [main] INFO  com.jeecg.JeewxBootApplication:675 - No active profile set, falling back to default profiles: default
+2019-07-25 16:13:21.534 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:90 - Tomcat initialized with port(s): 80 (http)
+2019-07-25 16:13:21.564 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-80"]
+2019-07-25 16:13:21.591 [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2019-07-25 16:13:21.592 [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-07-25 16:13:21.612 [main] INFO  org.apache.catalina.core.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_102\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_102/bin/server;C:/Program Files/Java/jre1.8.0_102/bin;C:/Program Files/Java/jre1.8.0_102/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;";C:\Program Files\Java\jdk1.8.0_102\bin;C:\Program Files\Java\jdk1.8.0_102\jre\bin;";C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;D:\Program Files (x86)\Svn\bin;D:\Program Files (x86)\Node\;D:\Program Files (x86)\Git\Git\cmd;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;D:\Program Files (x86)\eclipse;;.]
+2019-07-25 16:13:22.052 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeewx]:173 - Initializing Spring embedded WebApplicationContext
+2019-07-25 16:13:22.054 [main] INFO  org.springframework.web.context.ContextLoader:296 - Root WebApplicationContext: initialization completed in 3830 ms
+2019-07-25 16:13:22.151 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure:56 - Init DruidDataSource
+2019-07-25 16:13:23.037 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1003 - {dataSource-1} inited
+2019-07-25 16:13:24.800 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-25 16:13:24.906 [main] INFO  com.jeecg.p3.system.config.SystemConfigurer:55 - loginInterceptorExcludeUrls: /system/back/article/toIndex.do,/system/back/article/toArticle.do,/system/preSelectJwid.do,/system/back/home.do,/system/back/jwSystemAccountAPI/getUserAccountAmount.do,/back/backIndex/home.do
+2019-07-25 16:13:24.907 [main] INFO  com.jeecg.p3.system.config.SystemConfigurer:56 - accessSignInterceptorExcludeUrls: /api/cms/**,/cms/**,/wechatController.do,/weixinNewsController/goContent.do,/weixinLinksucai/link.do,/linksucai/link.do,/fx/mall/payCallBack.do,/newsController/getNewsClassify.do,/newsController/getNewslist.do,/CommonController/sendMsgCode.do
+2019-07-25 16:13:25.383 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2019-07-25 16:13:25.486 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-80"]
+2019-07-25 16:13:25.546 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 80 (http) with context path '/jeewx'
+2019-07-25 16:13:25.552 [main] INFO  com.jeecg.JeewxBootApplication:59 - Started JeewxBootApplication in 8.854 seconds (JVM running for 9.884)
+2019-07-25 16:13:25.558 [main] INFO  com.jeecg.JeewxBootApplication:27 - 
+----------------------------------------------------------
+	Application Jeewx-Boot is running! Access URLs:
+	Local: 		http://localhost:80/jeewx/
+	External: 	http://192.168.102.217:80/jeewx/
+	----------------------------------------------------------
+2019-07-25 16:13:37.473 [http-nio-80-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie:173 - A cookie header was received [1563844320,1563931251,1564017678; Hm_lpvt_6f6dcdf1cf6beff0de1b03f3e959c679=1564040063] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-07-25 16:13:37.504 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeewx]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-25 16:13:37.505 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-07-25 16:13:37.531 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:546 - Completed initialization in 24 ms
+2019-07-25 16:13:37.861 [http-nio-80-exec-1] INFO  com.jeecg.p3.system.web.SystemController:730 - 登录失败：用户【admin】验证码错误
+2019-07-25 16:13:42.849 [http-nio-80-exec-2] INFO  com.jeecg.p3.system.web.SystemController:159 - 登录验证成功：用户【admin】权限验证通过
+2019-07-25 16:13:43.678 [http-nio-80-exec-4] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:13:53.997 [http-nio-80-exec-8] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:87 - ---------------SignInterceptor--------------没有权限---requestPath=system/register
+2019-07-25 16:13:53.998 [http-nio-80-exec-8] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:169 - ---------------projectPath--------------system
+2019-07-25 16:13:54.007 [http-nio-80-exec-8] INFO  c.j.p3.dict.service.impl.SystemActTxtServiceImpl:66 - ------------------------getSysErrorConfig-----------------system
+2019-07-25 16:13:54.020 [http-nio-80-exec-8] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:188 - ---------------redirectUrl404--------------/jeewx/system/noAuth.do
+2019-07-25 16:13:58.154 [http-nio-80-exec-9] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:13:58.165 [http-nio-80-exec-3] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:14:01.796 [http-nio-80-exec-5] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:14:08.885 [http-nio-80-exec-1] INFO  com.jeecg.p3.system.web.SystemController:730 - 登录失败：用户【null】验证码错误
+2019-07-25 16:14:13.377 [http-nio-80-exec-4] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:14:18.200 [http-nio-80-exec-7] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:14:44.643 [http-nio-80-exec-3] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:87 - ---------------SignInterceptor--------------没有权限---requestPath=system/logout
+2019-07-25 16:14:44.643 [http-nio-80-exec-3] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:169 - ---------------projectPath--------------system
+2019-07-25 16:14:44.644 [http-nio-80-exec-3] INFO  c.j.p3.dict.service.impl.SystemActTxtServiceImpl:66 - ------------------------getSysErrorConfig-----------------system
+2019-07-25 16:14:44.656 [http-nio-80-exec-3] INFO  c.j.p3.system.interceptors.AccessSignInterceptor:188 - ---------------redirectUrl404--------------/jeewx/system/noAuth.do
+2019-07-25 16:15:07.689 [http-nio-80-exec-2] INFO  com.jeecg.p3.system.web.SystemController:730 - 登录失败：用户【admin】验证码错误
+2019-07-25 16:15:12.497 [http-nio-80-exec-5] INFO  com.jeecg.p3.system.web.SystemController:159 - 登录验证成功：用户【admin】权限验证通过
+2019-07-25 16:15:13.160 [http-nio-80-exec-6] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:26.639 [http-nio-80-exec-3] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:26.646 [http-nio-80-exec-10] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:30.924 [http-nio-80-exec-4] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:30.930 [http-nio-80-exec-5] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:31.747 [http-nio-80-exec-8] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:32.195 [http-nio-80-exec-10] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:32.410 [http-nio-80-exec-4] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:32.598 [http-nio-80-exec-7] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:32.750 [http-nio-80-exec-8] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:32.914 [http-nio-80-exec-10] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:33.065 [http-nio-80-exec-2] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:33.212 [http-nio-80-exec-5] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:33.374 [http-nio-80-exec-6] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:33.556 [http-nio-80-exec-3] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:34.283 [http-nio-80-exec-6] INFO  com.jeecg.p3.system.web.SystemController:730 - 登录失败：用户【null】验证码错误
+2019-07-25 16:15:35.057 [http-nio-80-exec-9] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:35.685 [http-nio-80-exec-1] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:35.872 [http-nio-80-exec-4] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:36.039 [http-nio-80-exec-7] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:36.202 [http-nio-80-exec-8] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:36.325 [http-nio-80-exec-3] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:36.492 [http-nio-80-exec-2] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:39.511 [http-nio-80-exec-7] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:39.516 [http-nio-80-exec-6] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:40.886 [http-nio-80-exec-1] INFO  com.jeecg.p3.system.web.SystemController:730 - 登录失败：用户【null】验证码错误
+2019-07-25 16:15:42.309 [http-nio-80-exec-5] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:42.315 [http-nio-80-exec-7] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:43.458 [http-nio-80-exec-9] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:43.464 [http-nio-80-exec-3] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:43.912 [http-nio-80-exec-1] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:43.919 [http-nio-80-exec-4] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:44.330 [http-nio-80-exec-6] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:44.337 [http-nio-80-exec-8] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:44.849 [http-nio-80-exec-10] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:44.855 [http-nio-80-exec-2] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:45.259 [http-nio-80-exec-5] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:45.266 [http-nio-80-exec-7] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:49.584 [http-nio-80-exec-9] INFO  com.jeecg.p3.system.web.SystemController:159 - 登录验证成功：用户【admin】权限验证通过
+2019-07-25 16:15:50.076 [http-nio-80-exec-3] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:52.256 [http-nio-80-exec-1] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:15:52.264 [http-nio-80-exec-5] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:16:03.296 [http-nio-80-exec-3] INFO  com.jeecg.p3.system.web.SystemController:159 - 登录验证成功：用户【admin】权限验证通过
+2019-07-25 16:16:03.853 [http-nio-80-exec-10] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:16:07.114 [http-nio-80-exec-5] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
+2019-07-25 16:16:07.119 [http-nio-80-exec-4] INFO  com.jeecg.p3.system.interceptors.LoginInterceptor:46 - ---------------AuthInterceptor--------------登录用户信息获取失败！
