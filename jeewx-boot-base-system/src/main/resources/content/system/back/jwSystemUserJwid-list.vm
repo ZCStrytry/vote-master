@@ -5,7 +5,7 @@
 <body style='overflow:scroll;overflow-x:hidden'>
 	<div class="container bs-docs-container" style="width:100%;">
 		<div class="row">
-			<form role="form" class="form-inline" action="$!{basePath}/system/back/jwSystemUserJwid/list.do" method="post"  id="formSubmit">
+			<form role="form" class="form-inline" action="$!{basePath}/system/back/jwSystemUserJwid/list" method="post"  id="formSubmit">
 				<div  class="col-md-10" style="width:100%">
 								<div class="panel panel-default">
 								  <div class="panel-heading">用户【$!{jwSystemUserJwid.userId}】公众号配置列表</div>
@@ -22,7 +22,7 @@
 											  <div class="clearfix"></div>
 								  		</div>
 								  		<div id="legend">
-								          <legend  class="le"><button type="button" class="btn btn-primary" onclick="doUrl('$!{basePath}/system/back/jwSystemUserJwid/toAdd.do?userId=$!{jwSystemUserJwid.userId}')" >新增</button></legend> 
+								          <legend  class="le"><button type="button" class="btn btn-primary" onclick="doUrl('$!{basePath}/system/back/jwSystemUserJwid/toAdd?userId=$!{jwSystemUserJwid.userId}')" >新增</button></legend> 
 								        </div>
 								        <table class="table table-striped">
 									        <thead>
@@ -39,7 +39,7 @@
 																	<td>$!{info.jwid}</td>
 																	<td>$!{info.name}</td>
 										                <td class="last">
-							                			<a href="javascript:delData('$!{basePath}/system/back/jwSystemUserJwid/doDelete.do?id=$!{info.id}')">删除</a>
+							                			<a href="javascript:delData('$!{basePath}/system/back/jwSystemUserJwid/doDelete?id=$!{info.id}')">删除</a>
 						                				</td>
 									           		</tr>
 									             #end

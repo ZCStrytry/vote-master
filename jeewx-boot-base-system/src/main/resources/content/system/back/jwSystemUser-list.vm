@@ -6,7 +6,7 @@
 <body style='overflow:scroll;overflow-x:hidden'>
 	<div class="container bs-docs-container" style="width:100%;">
 		<div class="row">
-			<form role="form" class="form-inline" action="$!{basePath}/system/back/jwSystemUser/list.do" method="post"  id="formSubmit">
+			<form role="form" class="form-inline" action="$!{basePath}/system/back/jwSystemUser/list" method="post"  id="formSubmit">
 				<div  class="col-md-10" style="width:100%">
 								<div class="panel panel-default">
 								  <div class="panel-heading">用户管理</div>
@@ -37,7 +37,7 @@
 											  <div class="clearfix"></div>
 								  		</div>
 								  		<div id="legend">
-								          <legend  class="le"><button type="button" class="btn btn-primary" onclick="doUrl('$!{basePath}/system/back/jwSystemUser/toAdd.do')" >新增</button></legend> 
+								          <legend  class="le"><button type="button" class="btn btn-primary" onclick="doUrl('$!{basePath}/system/back/jwSystemUser/toAdd')" >新增</button></legend> 
 								        </div>
 								        <table class="table table-striped">
 									        <thead>
@@ -60,10 +60,10 @@
 																		#end
 																	</td>
 										                <td class="last">
-							                			<a href="javascript:doUrl('$!{basePath}/system/back/jwSystemUser/toEdit.do?id=$!{info.id}')" >编辑</a>
-							                			<a href="javascript:doUrl('$!{basePath}/system/back/jwSystemUser/toChangePassword.do?id=$!{info.id}')" >修改密码</a>
-							                			<a href="javascript:delData('$!{basePath}/system/back/jwSystemUser/doDelete.do?id=$!{info.id}')">删除</a>
-							                			<a href="javascript:showPrivilegeTree('$!{basePath}/system/back/jwSystemUser/toJwidTree.do?id=$!{info.id}','分配公众号')">分配公众号</a>
+							                			<a href="javascript:doUrl('$!{basePath}/system/back/jwSystemUser/toEdit?id=$!{info.id}')" >编辑</a>
+							                			<a href="javascript:doUrl('$!{basePath}/system/back/jwSystemUser/toChangePassword?id=$!{info.id}')" >修改密码</a>
+							                			<a href="javascript:delData('$!{basePath}/system/back/jwSystemUser/doDelete?id=$!{info.id}')">删除</a>
+							                			<a href="javascript:showPrivilegeTree('$!{basePath}/system/back/jwSystemUser/toJwidTree?id=$!{info.id}','分配公众号')">分配公众号</a>
 						                				</td>
 									           		</tr>
 									             #end
@@ -101,7 +101,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" id="dialogFormClose"  data-dismiss="modal">关闭</button>
-        <button type="button" class="btn btn-primary" onclick="saveAuth('$!{basePath}/system/back/jwWebJwid/editUserJwid.do');" >提交</button>
+        <button type="button" class="btn btn-primary" onclick="saveAuth('$!{basePath}/system/back/jwWebJwid/editUserJwid');" >提交</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

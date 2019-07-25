@@ -7,7 +7,7 @@
 <body style='overflow:scroll;overflow-x:hidden'>
 	<div class="container bs-docs-container" style="width:100%;">
 		<div class="row">
-			<form role="form" class="form-inline" action="$!{basePath}/system/back/jwSystemAct/list.do" method="post"  id="formSubmit">
+			<form role="form" class="form-inline" action="$!{basePath}/system/back/jwSystemAct/list" method="post"  id="formSubmit">
 				<div  class="col-md-10" style="width:100%">
 								<div class="panel panel-default">
 								  <div class="panel-heading">平台活动列表</div>
@@ -196,7 +196,7 @@ function setHotAct(id,type){
     layer.confirm('确认设定吗？',function(index){
 		layer.close(index);
     	jQuery.ajax({
-    		url:'$!{basePath}/system/back/jwSystemAct/doEdit.do',
+    		url:'$!{basePath}/system/back/jwSystemAct/doEdit',
     		type:'post',
     		data:{id:id,isHotAct:type},
     		dataType:'json',

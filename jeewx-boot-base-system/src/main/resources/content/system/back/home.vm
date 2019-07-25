@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    <title>Jeewx 微信管家平台</title>
+    <title>微信投票</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta http-equiv="refresh" content="0;url=$!{basePath}/system/back/jwSystemProject/toIndex.do">
+    <meta http-equiv="refresh" content="0;url=$!{basePath}/system/back/jwSystemProject/toIndex">
 </head>
 <body>
 </body>

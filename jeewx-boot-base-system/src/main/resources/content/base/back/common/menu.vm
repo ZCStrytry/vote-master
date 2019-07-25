@@ -17,57 +17,57 @@
 
 		        <!--	    <h5 class="a_right"><a href="javascript:void(0);">公众号管理</a></h5>
 		            <ul>
-		                <li><a href="javascript:loadContent('$!{basePath}/system/back/jwWebJwid/list.do')">微信公众号</a></li> 
+		                <li><a href="javascript:loadContent('$!{basePath}/system/back/jwWebJwid/list')">微信公众号</a></li> 
 		                <hr class="sep"/>
 		               
 		            </ul>
 		            <h5 class="a_right"><a href="javascript:void(0);">活动项目管理</a></h5>
 		            <ul>
-		                <li><a href="javascript:loadContent('$!{basePath}/system/back/jwSystemProject/list.do')">活动项目</a></li> 
+		                <li><a href="javascript:loadContent('$!{basePath}/system/back/jwSystemProject/list')">活动项目</a></li> 
 		                <hr class="sep"/>
 		               
 		            </ul> -->
 		           <!--		 <h5 class="a_right"><a href="javascript:void(0);">九宫格活动管理</a></h5>
 		            <ul>
-		                <li><a href="javascript:loadContent('$!{basePath}/jiugongge/back/wxActJiugongge/list.do')">活动列表</a></li> 
-		                <li><a href="javascript:loadContent('$!{basePath}/jiugongge/back/wxActJiugonggeAwards/list.do')">奖项设置</a></li> 
-		                <li><a href="javascript:loadContent('$!{basePath}/jiugongge/back/wxActJiugonggePrizes/list.do')">奖品设置</a></li> 
-		                <li><a href="javascript:loadContent('$!{basePath}/jiugongge/back/wxActJiugonggeRecord/list.do')">中奖记录</a></li> 
+		                <li><a href="javascript:loadContent('$!{basePath}/jiugongge/back/wxActJiugongge/list')">活动列表</a></li> 
+		                <li><a href="javascript:loadContent('$!{basePath}/jiugongge/back/wxActJiugonggeAwards/list')">奖项设置</a></li> 
+		                <li><a href="javascript:loadContent('$!{basePath}/jiugongge/back/wxActJiugonggePrizes/list')">奖品设置</a></li> 
+		                <li><a href="javascript:loadContent('$!{basePath}/jiugongge/back/wxActJiugonggeRecord/list')">中奖记录</a></li> 
 		                <hr class="sep"/>		               
 		            </ul>  
 		            <h5 class="a_right"><a href="javascript:void(0);">新人赏活动管理</a></h5>
 		            <ul>
-		                <li><a href="javascript:loadContent('$!{basePath}/commonxrs/back/wxActCommonxrs/list.do')">活动列表</a></li> 
-		                <li><a href="javascript:loadContent('$!{basePath}/commonxrs/back/wxActCommonxrsBtnSet/list.do')">按钮配置</a></li>
+		                <li><a href="javascript:loadContent('$!{basePath}/commonxrs/back/wxActCommonxrs/list')">活动列表</a></li> 
+		                <li><a href="javascript:loadContent('$!{basePath}/commonxrs/back/wxActCommonxrsBtnSet/list')">按钮配置</a></li>
 		                <hr class="sep"/>		               
 		            </ul>
 		            <h5 class="a_right"><a href="javascript:void(0);">斧头帮活动管理</a></h5>
 		            <ul>
-		                <li><a href="javascript:loadContent('$!{basePath}/commonsj/back/wxActCommonsjMain/list.do')">主活动列表</a></li> 
-		                <li><a href="javascript:loadContent('$!{basePath}/commonsj/back/wxActCommonsj/list.do')">子活动列表</a></li> 
-		                <li><a href="javascript:loadContent('$!{basePath}/commonsj/back/wxActCommonsjRelation/list.do')">活动关系列表</a></li>
+		                <li><a href="javascript:loadContent('$!{basePath}/commonsj/back/wxActCommonsjMain/list')">主活动列表</a></li> 
+		                <li><a href="javascript:loadContent('$!{basePath}/commonsj/back/wxActCommonsj/list')">子活动列表</a></li> 
+		                <li><a href="javascript:loadContent('$!{basePath}/commonsj/back/wxActCommonsjRelation/list')">活动关系列表</a></li>
 		                <hr class="sep"/>		               
 		            </ul>
 		            <h5 class="a_right"><a href="javascript:void(0);">摇一摇卡券管理</a></h5>
 		            <ul>
-		                <li><a href="javascript:loadContent('$!{basePath}/shakecoupon/back/wxActShakecouponHome/list.do')">指定卡券活动</a></li> 
-		                <li><a href="javascript:loadContent('$!{basePath}/shakecoupon/back/wxActShakecouponConfig/list.do')">卡券活动概率配置</a></li>
+		                <li><a href="javascript:loadContent('$!{basePath}/shakecoupon/back/wxActShakecouponHome/list')">指定卡券活动</a></li> 
+		                <li><a href="javascript:loadContent('$!{basePath}/shakecoupon/back/wxActShakecouponConfig/list')">卡券活动概率配置</a></li>
 		                <hr class="sep"/>		               
 		            </ul>
 		            <h5 class="a_right"><a href="javascript:void(0);">红包活动管理</a></h5>
 		            <ul>
-		                <li><a href="javascript:loadContent('$!{basePath}/commonluckymoney/back/wxActCommonluckymoney/list.do')">红包活动</a></li> 
-		                <li><a href="javascript:loadContent('$!{basePath}/commonluckymoney/back/wxActCommonluckymoneyAwards/list.do')">奖项配置</a></li>
+		                <li><a href="javascript:loadContent('$!{basePath}/commonluckymoney/back/wxActCommonluckymoney/list')">红包活动</a></li> 
+		                <li><a href="javascript:loadContent('$!{basePath}/commonluckymoney/back/wxActCommonluckymoneyAwards/list')">奖项配置</a></li>
 		                <hr class="sep"/>		               
 		            </ul>-->
 
 		           <!-- <h5 class="a_right"><a href="javascript:void(0);">系统功能管理</a></h5>
 		             <ul>
-		                <li><a href="javascript:loadContent('$!{basePath}/system/back/jwSystemAct/list.do')">活动项目</a></li> 
-		                <li><a href="javascript:loadContent('$!{basePath}/system/back/jwSystemActTxt/list.do')">系统文本</a></li>
-		                <li><a href="javascript:loadContent('$!{basePath}/system/back/jwSystemUser/list.do')">用户管理</a></li> 
-		                <li><a href="javascript:loadContent('$!{basePath}/system/back/jwSystemRole/list.do')">角色管理</a></li> 
-		                <li><a href="javascript:loadContent('$!{basePath}/system/back/jwSystemAuth/list.do')">权限管理</a></li> 
+		                <li><a href="javascript:loadContent('$!{basePath}/system/back/jwSystemAct/list')">活动项目</a></li> 
+		                <li><a href="javascript:loadContent('$!{basePath}/system/back/jwSystemActTxt/list')">系统文本</a></li>
+		                <li><a href="javascript:loadContent('$!{basePath}/system/back/jwSystemUser/list')">用户管理</a></li> 
+		                <li><a href="javascript:loadContent('$!{basePath}/system/back/jwSystemRole/list')">角色管理</a></li> 
+		                <li><a href="javascript:loadContent('$!{basePath}/system/back/jwSystemAuth/list')">权限管理</a></li> 
 		                <hr class="sep"/>
 		               
 		            </ul> -->

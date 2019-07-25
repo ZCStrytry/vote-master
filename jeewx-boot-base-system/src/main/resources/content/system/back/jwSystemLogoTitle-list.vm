@@ -7,7 +7,7 @@
 <body style='overflow:scroll;overflow-x:hidden'>
 	<div class="container bs-docs-container" style="width:100%;">
 		<div class="row">
-			<form role="form" class="form-inline" action="$!{basePath}/system/back/jwSystemLogoTitle/list.do" method="post"  id="formSubmit">
+			<form role="form" class="form-inline" action="$!{basePath}/system/back/jwSystemLogoTitle/list" method="post"  id="formSubmit">
 				<div  class="col-md-10" style="width:100%">
 								<div class="panel panel-default">
 								  <div class="panel-heading">系统首页配置</div>
@@ -44,7 +44,7 @@
 								  		**#
 								  		#if($pageInfos.size()<=0)
 									  		<div id="legend">
-									          <legend  class="le"><button type="button" class="btn btn-primary" onclick="doUrl('$!{basePath}/system/back/jwSystemLogoTitle/toAdd.do')" ><span class="glyphicon glyphicon-plus"></span> 新增</button></legend> 
+									          <legend  class="le"><button type="button" class="btn btn-primary" onclick="doUrl('$!{basePath}/system/back/jwSystemLogoTitle/toAdd')" ><span class="glyphicon glyphicon-plus"></span> 新增</button></legend> 
 									        </div>
 								        #end
 								        <table class="table table-striped">
@@ -67,8 +67,8 @@
 																	##<td>$!{info.loginPageHead}</td>
 																	##<td>$!{info.loginPageFooter}</td>
 										                <td class="last">
-							                			<a class="btn btn-xs btn-primary" href="javascript:doUrl('$!{basePath}/system/back/jwSystemLogoTitle/toEdit.do?id=$!{info.id}')" ><i class="fa fa-edit"></i> 编辑</a>
-							                			<a class="btn btn-xs btn-danger" href="javascript:delData('$!{basePath}/system/back/jwSystemLogoTitle/doDelete.do?id=$!{info.id}')"><i class="fa fa-trash-o"></i> 删除</a>
+							                			<a class="btn btn-xs btn-primary" href="javascript:doUrl('$!{basePath}/system/back/jwSystemLogoTitle/toEdit?id=$!{info.id}')" ><i class="fa fa-edit"></i> 编辑</a>
+							                			<a class="btn btn-xs btn-danger" href="javascript:delData('$!{basePath}/system/back/jwSystemLogoTitle/doDelete?id=$!{info.id}')"><i class="fa fa-trash-o"></i> 删除</a>
 						                				</td>
 									           		</tr>
 									             #end

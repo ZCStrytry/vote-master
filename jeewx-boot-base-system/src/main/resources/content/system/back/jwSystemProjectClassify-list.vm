@@ -5,7 +5,7 @@
 <body style='overflow:scroll;overflow-x:hidden'>
 	<div class="container bs-docs-container" style="width:100%;">
 		<div class="row">
-			<form role="form" class="form-inline" action="$!{basePath}/system/back/jwSystemProjectClassify/list.do" method="post"  id="formSubmit">
+			<form role="form" class="form-inline" action="$!{basePath}/system/back/jwSystemProjectClassify/list" method="post"  id="formSubmit">
 				<div  class="col-md-10" style="width:100%">
 								<div class="panel panel-default">
 								  <div class="panel-heading">砍价活动配置列表</div>
@@ -57,7 +57,7 @@
 											  <div class="clearfix"></div>
 								  		</div>
 								  		<div id="legend">
-								          <legend  class="le"><button type="button" class="btn btn-primary" onclick="doUrl('$!{basePath}/system/back/jwSystemProjectClassify/toAdd.do')" >新增</button></legend> 
+								          <legend  class="le"><button type="button" class="btn btn-primary" onclick="doUrl('$!{basePath}/system/back/jwSystemProjectClassify/toAdd')" >新增</button></legend> 
 								        </div>
 								        <table class="table table-striped">
 									        <thead>
@@ -82,9 +82,9 @@
 																	<td>$!dateTool.format("yyyy-MM-dd",$!{info.createTime})</td>
 																	<td>$!{info.updateName}</td>
 										                <td class="last">
-							                			<a href="javascript:doUrl('$!{basePath}/system/back/jwSystemProjectClassify/toEdit.do?id=$!{info.id}')" >编辑</a>
-							                			<a href="javascript:delData('$!{basePath}/system/back/jwSystemProjectClassify/doDelete.do?id=$!{info.id}')">删除</a>
-							                			<a href="javascript:doUrl('$!{basePath}/system/back/jwSystemProjectClassify/toDetail.do?id=$!{info.id}')">详情</a>
+							                			<a href="javascript:doUrl('$!{basePath}/system/back/jwSystemProjectClassify/toEdit?id=$!{info.id}')" >编辑</a>
+							                			<a href="javascript:delData('$!{basePath}/system/back/jwSystemProjectClassify/doDelete?id=$!{info.id}')">删除</a>
+							                			<a href="javascript:doUrl('$!{basePath}/system/back/jwSystemProjectClassify/toDetail?id=$!{info.id}')">详情</a>
 						                				</td>
 									           		</tr>
 									             #end

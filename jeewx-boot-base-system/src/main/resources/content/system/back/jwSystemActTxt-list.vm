@@ -5,7 +5,7 @@
 <body style='overflow:scroll;overflow-x:hidden'>
 	<div class="container bs-docs-container" style="width:100%;">
 		<div class="row">
-			<form role="form" class="form-inline" action="$!{basePath}/system/back/jwSystemActTxt/list.do?actCode=$!{jwSystemActTxt.actCode}&backurl=$!{backurl}" method="post"  id="formSubmit">
+			<form role="form" class="form-inline" action="$!{basePath}/system/back/jwSystemActTxt/list?actCode=$!{jwSystemActTxt.actCode}&backurl=$!{backurl}" method="post"  id="formSubmit">
 				<div  class="col-md-10" style="width:100%">
     				<div class="panel panel-default">
     				  <div class="panel-heading">系统文本配置列表</div>
@@ -21,7 +21,7 @@
     							 <div class="clearfix"></div>
     				  		</div>
     				  		<div id="legend">
-    				          <legend  class="le"><button type="button" class="btn btn-primary" onclick="doUrl('$!{basePath}/system/back/jwSystemActTxt/toAdd.do?actCode=$!{jwSystemActTxt.actCode}&backurl=$!{backurl}')" >新增</button></legend> 
+    				          <legend  class="le"><button type="button" class="btn btn-primary" onclick="doUrl('$!{basePath}/system/back/jwSystemActTxt/toAdd?actCode=$!{jwSystemActTxt.actCode}&backurl=$!{backurl}')" >新增</button></legend> 
     				        </div>
     				        <table class="table table-striped">
     					        <thead>
@@ -40,9 +40,9 @@
     													<td>$!{dictTool.subText($!{dictTool.escapeHtml($!{info.content})},100,'...')}</td>
     													<td hidden>$!{info.actCode}</td>
     						                <td class="last">
-    			                			<a href="javascript:doUrl('$!{basePath}/system/back/jwSystemActTxt/toEdit.do?id=$!{info.id}&actCode=$!{jwSystemActTxt.actCode}&backurl=$!{backurl}')" >编辑</a>
-    			                			<a href="javascript:delData('$!{basePath}/system/back/jwSystemActTxt/doDelete.do?id=$!{info.id}&actCode=$!{jwSystemActTxt.actCode}&backurl=$!{backurl}')">删除</a>
-    			                			<a href="javascript:doUrl('$!{basePath}/system/back/jwSystemActTxt/toDetail.do?id=$!{info.id}&actCode=$!{jwSystemActTxt.actCode}&backurl=$!{backurl}')">详情</a>
+    			                			<a href="javascript:doUrl('$!{basePath}/system/back/jwSystemActTxt/toEdit?id=$!{info.id}&actCode=$!{jwSystemActTxt.actCode}&backurl=$!{backurl}')" >编辑</a>
+    			                			<a href="javascript:delData('$!{basePath}/system/back/jwSystemActTxt/doDelete?id=$!{info.id}&actCode=$!{jwSystemActTxt.actCode}&backurl=$!{backurl}')">删除</a>
+    			                			<a href="javascript:doUrl('$!{basePath}/system/back/jwSystemActTxt/toDetail?id=$!{info.id}&actCode=$!{jwSystemActTxt.actCode}&backurl=$!{backurl}')">详情</a>
     		                				</td>
     					           		</tr>
     					             #end

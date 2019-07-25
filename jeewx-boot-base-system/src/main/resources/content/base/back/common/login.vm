@@ -59,24 +59,20 @@ h1{ margin-top: 160px; color: #0096cd; font-family: "sans-serif"; font-size: 32p
 		<div class="pull-left logo">$!{logoTitle.logo}</div>
 	</div>
 	<div class="container" style="min-height: 400px;">
-		<!--
-			<h1 class="center-block" style="width:230px;">P3插件管理系统</h1>
-			<hr />
-		-->
 		<div class="loginP">
 			<h1 class="center-block" style="width:290px;font-size:x-large;text-align:center">$!{logoTitle.title1}</h1>
-			<form action="../system/login.do" id="loginform" class="form-signin" role="form" method="post">
-				<input type="hidden" name="jwid" id="jwid" value="">
+			<form action="../system/login" id="loginform" class="form-signin" role="form" method="post">
+				<!--<input type="hidden" name="jwid" id="jwid" value="">-->
 				<input type="text" name="username" id="username" class="form-control" placeholder="用户名" required autofocus style="background:url('../plug-in/css/images/u.png') 10px center no-repeat #fff; text-indent:30px;"> <br/>
 				<input type="password" name="password"  id="password"  class="form-control" placeholder="密码" required autofocus style="background:url('../plug-in/css/images/p.png') 10px center no-repeat #fff; text-indent:30px;margin-bottom:0"> <br/>
 				<input type="text" id="randCode" name="randCode" class="form-control" placeholder="验证码" required autofocus style="background:url('../plug-in/css/images/p.png') 10px center no-repeat #fff; text-indent:30px;width:170px;float:left">
-					<img style="float:left;margin-left:15px;height:44px;width:110px" scr="javascript:location.href='/randCodeImage.do" id="randCodeImage"/> 
+					<img style="float:left;margin-left:15px;height:44px;width:110px" scr="javascript:location.href='/randCodeImage" id="randCodeImage"/> 
 					<br/>
 					<div style="clear:both;height:1px"></div>
 				<label class="checkbox"> 
-				<input type="checkbox" id="rememberme" name="rememberme"  onchange="javascript:setCheckbox(this);" />下次自动登录 </label>
-				<input type="button" class="btn btn-primary" name="Submit2" value="登&nbsp;录"  onclick="javascript:checkUser();"/>
-				<input type="button" class="btn btn-primary" name="Submit2" value="注&nbsp;册"  onclick="doUrl('$!{basePath}/system/register.do')"/>
+				<!--<input type="checkbox" id="rememberme" name="rememberme"  onchange="javascript:setCheckbox(this);" />下次自动登录 </label>-->
+				<input type="button" style="width:250px;font-size:x-large;text-align:center" class="btn btn-primary" name="Submit2" value="登&nbsp;录"  onclick="javascript:checkUser();"/>
+				<!--<input type="button" class="btn btn-primary" name="Submit2" value="注&nbsp;册"  onclick="doUrl('$!{basePath}/system/register')"/>-->
 			</form>
 		</div>
 	</div>
@@ -112,8 +108,8 @@ h1{ margin-top: 160px; color: #0096cd; font-family: "sans-serif"; font-size: 32p
     			checkUser();
     		}
 		});
-		if($("#top",parent.document.body).attr("name")!= undefined){
-   			$(parent.location).attr("href","$!{basePath}/system/logout.do");	
+		if($("#top",parentcument.body).attr("name")!= undefined){
+   			$(parent.location).attr("href","$!{basePath}/system/logout");	
    		}
 	});
 	function setCheckbox(box){
@@ -125,16 +121,16 @@ h1{ margin-top: 160px; color: #0096cd; font-family: "sans-serif"; font-size: 32p
 		}
 	}
 	function submitForm(){
-		  var jwid = $("#jwid").val();
-	      if(jwid==""){
-	         alert("请选择公众号");
-	         return;
-	      }
+		 // var jwid = $("#jwid").val();
+	     // if(jwid==""){
+	     //    alert("请选择公众号");
+	     //    return;
+	     // }
 		  document.getElementById('loginform').submit();
 	}
 	
 	function checkUser(){
-		var url = "$!{basePath}/system/checkUser.do";
+		var url = "$!{basePath}/system/checkUser";
 		var username = $("#username").val();
 	 	var password = $("#password").val();
 		var randCode = $("#randCode").val();
@@ -151,12 +147,13 @@ h1{ margin-top: 160px; color: #0096cd; font-family: "sans-serif"; font-size: 32p
 			success : function(data){
 				//$("#randCodeImage").attr("src","$!{basePath}/randCodeImage?v="+new Date().getTime());
 				if(data.success){	
-				     if(data.obj!=""){
-				     	$("#jwid").val(data.obj);
-				     	submitForm();
-				     }else{
-					 	preLogin('$!{basePath}/system/preLogin.do','请选择公众号');
-					 }
+					 submitForm();
+				     //if(data.obj!=""){
+				     //	$("#jwid").val(data.obj);
+				     //	submitForm();
+				     //}else{
+					 //	preLogin('$!{basePath}/system/preLogin','请选择公众号');
+					 //}
 				}else{
 					alert(data.msg);
 				}

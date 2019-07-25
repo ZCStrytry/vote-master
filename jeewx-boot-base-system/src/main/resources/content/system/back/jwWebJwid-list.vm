@@ -5,7 +5,7 @@
 <body style='overflow:scroll;overflow-x:hidden'>
 	<div class="container bs-docs-container" style="width:100%;">
 		<div class="row">
-			<form role="form" class="form-inline" action="$!{basePath}/system/back/jwWebJwid/list.do" method="post"  id="formSubmit">
+			<form role="form" class="form-inline" action="$!{basePath}/system/back/jwWebJwid/list" method="post"  id="formSubmit">
 				<div  class="col-md-10" style="width:100%">
 								<div class="panel panel-default">
 								  <div class="panel-heading">微信公众号列表</div>
@@ -33,7 +33,7 @@
 											  <div class="clearfix"></div>
 								  		</div>
 								  		<div id="legend" style="height:1rem">
-								         ## <legend  class="le"><button type="button" class="btn btn-primary" onclick="doUrl('$!{basePath}/system/back/jwWebJwid/toAdd.do')" >新增</button></legend> 
+								         ## <legend  class="le"><button type="button" class="btn btn-primary" onclick="doUrl('$!{basePath}/system/back/jwWebJwid/toAdd')" >新增</button></legend> 
 								        </div>
 								        <table class="table table-striped">
 									        <thead>
@@ -60,8 +60,8 @@
 														<td>$!{info.createBy}</td>
 														<td>$!dateTool.format("yyyy-MM-dd HH:mm:ss",$!{info.createTime})</td>
 										                <td class="last">
-    							                			##<a href="javascript:doUrl('$!{basePath}/system/back/jwWebJwid/toEdit.do?id=$!{info.id}')" >编辑</a>
-    							                			<a href="javascript:delData('$!{basePath}/system/back/jwWebJwid/doDelete.do?id=$!{info.id}')">删除</a>
+    							                			##<a href="javascript:doUrl('$!{basePath}/system/back/jwWebJwid/toEdit?id=$!{info.id}')" >编辑</a>
+    							                			<a href="javascript:delData('$!{basePath}/system/back/jwWebJwid/doDelete?id=$!{info.id}')">删除</a>
 						                				</td>
 									           		</tr>
 									             #end

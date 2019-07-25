@@ -4,15 +4,20 @@
             <div class="navbar-header" style="height: 60px;width:auto"><a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
                 <form role="search" class="navbar-form-custom" method="post" action="search_results.html" style="width: 250px;">
                     <div class="form-group">
-                        <input type="text" placeholder="JeeWx捷微- 免费的微信管家平台" class="form-control" name="top-search" id="top-search">
+                        <input type="text" placeholder="微信投票" class="form-control" name="top-search" id="top-search">
                     </div>
                 </form>
             </div>
             <ul class="nav navbar-top-links navbar-right">
                    
-                    <li class="dropdown hidden-xs">
-                    	<a class="" aria-expanded="false" href="javascript:void(0)" onclick="preLogin('$!{basePath}/system/back/preSelectJwid.do','请选择公众号')">
+                    <!--<li class="dropdown hidden-xs">
+                    	<a class="" aria-expanded="false" href="javascript:void(0)" onclick="preLogin('$!{basePath}/system/back/preSelectJwid','请选择公众号')">
                            <span><i class="fa fa-wechat" style="color:#1ab394"></i>$!{jwidname}<b class="caret"></b></span>
+                        </a>
+                    </li>-->
+                    <li class="dropdown hidden-xs">
+                    	<a class="dropdown hidden-xs" href="#">
+                               <span ><strong class="font-bold"><i class="fa fa-user" style="color:#1ab394"></i> 报名审核</strong></span>
                         </a>
                     </li>
 					<li class="dropdown hidden-xs">
@@ -22,7 +27,7 @@
                     </li>
                     
                       <li class="dropdown hidden-xs">
-                        <a class="" aria-expanded="false" href="$!{basePath}/system/logout.do">
+                        <a class="" aria-expanded="false" href="$!{basePath}/system/logout">
                             <i class="fa fa fa-sign-out" style="color:#1ab394"></i> 退出
                         </a>
                     </li>
@@ -34,7 +39,7 @@
         </button>
         <nav class="page-tabs J_menuTabs">
             <div class="page-tabs-content">
-                <a href="javascript:;" class="active J_menuTab" data-id="$!{basePath}/system/back/home.do">首页</a>
+                <a href="javascript:;" class="active J_menuTab" data-id="$!{basePath}/system/back/home">首页</a>
             </div>
         </nav>
         <button class="roll-nav roll-right J_tabRight"><i class="fa fa-forward"></i>
@@ -53,10 +58,10 @@
                 </li>
             </ul>
         </div>
-        <!-- <a href="$!{basePath}/system/logout.do" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a> -->
+        <!-- <a href="$!{basePath}/system/logout" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a> -->
     </div>
     <div class="row J_mainContent" id="content-main">
-        <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="$!{basePath}/system/back/home.do" frameborder="0" data-id="$!{basePath}/system/back/home.do" seamless=""></iframe>
+        <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="$!{basePath}/system/back/home" frameborder="0" data-id="$!{basePath}/system/back/home" seamless=""></iframe>
     </div>
     <div class="footer">
         <div class="pull-right">技术交流群 ： 97460170 &nbsp;&nbsp;&nbsp;&nbsp;|   &nbsp;&nbsp; ©<a href="http://www.jeewx.com" target="_blank">JeeWx 捷微</a></div>
@@ -125,7 +130,7 @@
 			jwid = '';
 		}
 		jQuery.ajax({
-			url : '$!{basePath}/system/back/switchDefaultOfficialAcco.do',
+			url : '$!{basePath}/system/back/switchDefaultOfficialAcco',
 			cache : false,
 			data : {
 				jwid : jwid

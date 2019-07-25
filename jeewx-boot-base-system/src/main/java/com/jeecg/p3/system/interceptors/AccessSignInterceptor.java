@@ -44,14 +44,15 @@ public class AccessSignInterceptor implements HandlerInterceptor {
 		String basePath = request.getContextPath();
 		request.setAttribute("basePath", basePath);
 		if (oConvertUtils.isNotEmpty(requestPath)) {
-			if (requestPath.indexOf("/back/") > -1) {
+			if (requestPath.indexOf("/back/") > -1 || requestPath.contains("checkUser")
+					|| requestPath.contains("login") || requestPath.contains("logout")) {
 				return true;
 			} else if (requestUrl.indexOf(SIGN_PARAM_NAME + "=") != -1) {
 				String openid = request.getParameter("openid");
 				String nickname = request.getParameter("nickname");
 				String sign = request.getParameter(SIGN_PARAM_NAME);
-				logger.debug(
-						"----openid--------" + openid + "----nickname--------" + nickname + "----Sign--------" + sign);
+				logger.debug("----openid--------" + openid + "----nickname--------" + nickname + "----Sign--------"
+						+ sign);
 				if (StringUtil.notEmpty(sign)) {
 					Map<String, String> paramMap = getSignMap(request);
 					boolean check = SignatureUtil.checkSign(paramMap, SystemProperties.SIGN_KEY, sign);
@@ -171,8 +172,7 @@ public class AccessSignInterceptor implements HandlerInterceptor {
 		return projectPath;
 	}
 
-	private void redirectUrl404(String requestPath, String defaultUrl, HttpServletResponse response)
-			throws IOException {
+	private void redirectUrl404(String requestPath, String defaultUrl, HttpServletResponse response) throws IOException {
 		String projectPath = getProjectPath(requestPath);
 		try {
 			if (StringUtils.isNotEmpty(projectPath)) {

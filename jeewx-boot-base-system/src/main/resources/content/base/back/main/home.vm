@@ -36,7 +36,7 @@
 <pre style="box-sizing: inherit; overflow: auto; font-family: Menlo, &#39;Liberation Mono&#39;, Consolas, &#39;DejaVu Sans Mono&#39;, &#39;Ubuntu Mono&#39;, &#39;Courier New&#39;, &#39;andale mono&#39;, &#39;lucida console&#39;, monospace; margin-top: 0px; margin-bottom: 15px; background-color: rgb(244, 244, 244); border: none; font-size: 13px; line-height: 19px; padding: 6px 10px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; color: rgb(51, 51, 51);">1.Eclipse + Maven + JDK7
 2.项目以Maven方式导入eclipse
 3.采用maven方式，启动主项目P3-Web，命令：tomcat:run
-  活动访问地址：http://localhost:8080/P3-Web/gzbargain/toIndex.do?actId=actgzbargain00001&amp;openid=oR0jFt_DTsAUJebWqGeq3A1VWfRw&amp;subscribe=1
+  活动访问地址：http://localhost:8080/P3-Web/gzbargain/toIndex?actId=actgzbargain00001&amp;openid=oR0jFt_DTsAUJebWqGeq3A1VWfRw&amp;subscribe=1
   说明：插件不能单独启动，maven方式引入到Web项目</pre>
 <p style="box-sizing: inherit; margin-top: 0px; margin-bottom: 15px; line-height: 1.33; color: rgba(0, 0, 0, 0.8); font-family: Lato, &#39;Helvetica Neue&#39;, &#39;Microsoft YaHei&#39;, Arial, Helvetica, sans-serif; font-size: 15px; white-space: normal; ">
     【插件项目生成】
@@ -46,7 +46,7 @@
 public static void main(String[] args) throws Exception {
     //项目名
     String projectName = &quot;Gogo&quot;;//项目名称 ：P3-Biz-{自定义模块名}
-    GeneratorFactory.doMake(projectName);
+    GeneratorFactoryMake(projectName);
 }
 
 项目名：P3-Biz-{ProjectName}</pre>

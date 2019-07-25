@@ -7,7 +7,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">编辑</div>
 				<div class="panel-body">
-					<form class="form-horizontal" role="form" id="dailogForm" action="$!{basePath}/system/back/jwSystemRole/doEdit.do" method="POST">
+					<form class="form-horizontal" role="form" id="dailogForm" action="$!{basePath}/system/back/jwSystemRole/doEdit" method="POST">
 						 <input type="hidden" id="btn_sub" class="btn_sub" />
 						 <input type="hidden" value="$!{jwSystemRole.id}" name="id" id="id" />
 												<div class="form-group mno">
@@ -24,7 +24,7 @@
 												</div>
 									<div class="form-group mno">
 											<div class="col-sm-offset-1 col-sm-6">
-												<button type="button" class="btn btn-default" id="formReturn" data-dismiss="modal" onclick="doUrl('$!{basePath}/system/back/jwSystemRole/list.do')">返回</button>
+												<button type="button" class="btn btn-default" id="formReturn" data-dismiss="modal" onclick="doUrl('$!{basePath}/system/back/jwSystemRole/list')">返回</button>
 	        									<button type="button" class="btn btn-primary" id="formSubmit">提交</button>
         									 </div>
         							</div>

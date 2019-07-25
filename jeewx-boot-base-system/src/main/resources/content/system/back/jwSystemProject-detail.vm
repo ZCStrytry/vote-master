@@ -72,7 +72,7 @@
 							  </fieldset>
 							  			<div class="form-group mno">
 											<div class="col-sm-offset-1 col-sm-6">
-												<button type="button" class="btn btn-default" id="formReturn" data-dismiss="modal" onclick="doUrl('$!{basePath}/system/back/jwSystemProject/list.do')">返回</button>
+												<button type="button" class="btn btn-default" id="formReturn" data-dismiss="modal" onclick="doUrl('$!{basePath}/system/back/jwSystemProject/list')">返回</button>
         									 </div>
         							    </div>
 						</form>

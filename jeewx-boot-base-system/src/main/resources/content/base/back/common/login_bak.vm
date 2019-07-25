@@ -76,7 +76,7 @@
 													<div style="text-align:center;margin-top:240px">请使用微信扫一扫登录</div>
 												</div>
 												<div class="con">
-													<form action="../system/login.do" id="loginform" class="form-signin" role="form" method="post">
+													<form action="../system/login" id="loginform" class="form-signin" role="form" method="post">
 														<div class="yonghuming">
 															<input type="text" id="username" name="username" value="" placeholder="用户名" class="shurukuang" style="width:255px">
 														</div>
@@ -100,7 +100,7 @@
 													<div class="zhuce">											
 														<p>
 															还没有登录账号？
-															<a href="../system/register.do">
+															<a href="../system/register">
 																<span>点击注册</span>
 															</a>
 														</p>
@@ -166,7 +166,7 @@
 <!-- <script>
 	$(function(){
 		jQuery.ajax({
-    		url:basePath+'/system/queryHeadAndFooter.do',
+    		url:basePath+'/system/queryHeadAndFooter',
     		data:{},
     		type:'POST',
     		dataType:'json',
@@ -254,14 +254,14 @@ $(function() {
 			}
 		}
 	});
-	if($("#top",parent.document.body).attr("name")!= undefined){
-		$(parent.location).attr("href","$!{basePath}/system/logout.do");	
+	if($("#top",parentcument.body).attr("name")!= undefined){
+		$(parent.location).attr("href","$!{basePath}/system/logout");	
 	}
 	getQrcodeUrl();
 });
 //检测用户名和密码是否正确,检测验证码
 function checkUser(){
-	var url = "$!{basePath}/system/checkUser.do";
+	var url = "$!{basePath}/system/checkUser";
 	var username = $("#username").val();
  	var password = $("#password").val();
 	var randCode = $("#randCode").val();
@@ -281,7 +281,7 @@ function checkUser(){
 			     	$("#jwid").val(data.obj);
 					$("#loginform").submit();
 			     }else{
-				 	preLogin('$!{basePath}/system/preLogin.do','请选择公众号');
+				 	preLogin('$!{basePath}/system/preLogin','请选择公众号');
 					$("#logintype").val("mm");
 				 	//getDefaultJwid();
 				 }
@@ -358,7 +358,7 @@ function wxlogin(){
 		return;
 	}
 	jQuery.ajax({
-		url:"$!{basePath}/system/wxLogin.do",
+		url:"$!{basePath}/system/wxLogin",
 		type:"POST",
 		dataType:"JSON",
 		data:{
@@ -366,7 +366,7 @@ function wxlogin(){
 		},
 		success:function(data){
 			if(data.success){
-				location.href="$!{basePath}/system/login.do"
+				location.href="$!{basePath}/system/login"
 			}else{
 				//alert(data.msg);
 				layeralert(data.msg);
@@ -378,7 +378,7 @@ function wxlogin(){
 function getDefaultJwid(){
 	var username = $("#username").val();
  	var password = $("#password").val();
-	var url = "$!{basePath}/system/getDefaultJwid.do";
+	var url = "$!{basePath}/system/getDefaultJwid";
 	jQuery.ajax({
 		url : url,
 		type:"post",
@@ -414,7 +414,7 @@ function getQrcodeUrl(){
 	sceneId="";
 	k=0;
 	jQuery.ajax({
-		url:"$!{basePath}/system/getQrcodeUrl.do",
+		url:"$!{basePath}/system/getQrcodeUrl",
 		type:"POST",
 		dataType:"JSON",
 		data:{
@@ -437,7 +437,7 @@ function refreshQrcode(){
 		return;
 	}
 	jQuery.ajax({
-		url:"$!{basePath}/system/validateLogin.do",
+		url:"$!{basePath}/system/validateLogin",
 		type:"POST",
 		dataType:"JSON",
 		data:{
@@ -446,9 +446,9 @@ function refreshQrcode(){
 		success:function(data){
 			if(data.success){
 				if(data.obj=="1"){
-					location.href="$!{basePath}/system/login.do";
+					location.href="$!{basePath}/system/login";
 				}else{
-					preLogin('$!{basePath}/system/chooseWeixinId.do','请选择公众号');
+					preLogin('$!{basePath}/system/chooseWeixinId','请选择公众号');
 					$("#logintype").val("wx");
 				}
 				$(".tcc_tm_bg").show();
