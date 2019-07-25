@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+#parse("content/base/back/common/head.vm")
+<body style='overflow:scroll;overflow-x:hidden'>
+	<div class="container bs-docs-container" style="width:100%;">
+		<div class="row">
+			<div class="panel panel-default">
+				<div class="panel-heading">修改</div>
+					<div class="panel-body">
+						<form class="form-horizontal" role="form" id="dailogForm" action="$!{basePath}/system/back/account/update.do" method="POST">
+					  		<input type="hidden" id="btn_sub" class="btn_sub" />
+												<div class="form-group mno">
+												    <label for="inputEmail3" class="col-sm-2 control-label" style="text-align:left;">联系方式（账号）</label>
+												    <div class="col-sm-6">
+												    	<input type="hidden" name="id" id="id" value="$!{user.id}"/>
+												      <input type="text" name="accountNo" id="accountNo" value="$!{user.userId}" class="form-control" datatype="s2-50" errormsg="账号名至少2个字符,最多50个字符！"/>
+												    </div>
+												</div>
+												<div class="form-group mno">
+												    <label for="inputEmail3" class="col-sm-2 control-label" style="text-align:left;">真实姓名：</label>
+												    <div class="col-sm-6">
+												      <input type="text" name="userName" id="userName" value="$!{user.userName}" class="form-control" datatype="s2-6" errormsg="账号名至少2个字符,最多6个字符！"/>
+												    </div>
+												</div>
+												
+												<div class="form-group mno">
+												    <label for="inputEmail3" class="col-sm-2 control-label" style="text-align:left;">账号类型：</label>
+												    <div class="col-sm-6">
+												         <select name="userType" id="userType"  class="form-control" placeholder="账号类型"> 
+												      		  #foreach($!{info} in $!{list})
+												      		  	 <option value="$!{info.code}" #if($!{info.code} == $!{user.userTyp}) selected #end>$!{info.value}</option>
+												      		  #end
+												      	 </select>
+												    </div>
+												</div>
+										<div class="form-group mno">
+											<div class="col-sm-offset-1 col-sm-6">
+												<button type="button" class="btn btn-default" id="formReturn" data-dismiss="modal" onclick="doUrl('$!{basePath}/system/back/account/list.do')">返回</button>
+	        									<button type="button" class="btn btn-primary" id="formSubmit">修改</button>
+        									 </div>
+        								</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="$!{basePath}/plug-in/js/Validform_v5.3.2.js"></script>
+<script type="text/javascript" src="$!{basePath}/plug-in/plugin/passwordStrength/passwordStrength-min.js"></script> 
+<script type="text/javascript">
+$(function (){ 
+			var form = $("#dailogForm").Validform({
+        			tiptype:4,
+					usePlugin:{
+						passwordstrength:{
+							minLen:6,
+							maxLen:18
+						}
+					}
+        	});
+        	
+        	$("#formSubmit").bind("click",function(){
+        		var flag = form.check();
+        		if(flag){
+        			if(confirm("确认提交吗？")){
+						ajaxdoFormSubmit('dailogForm');
+            		}
+    			}else{
+					alert("信息校验没有通过，请检查填写的信息");
+				}
+        	});
+});
+</script> 
