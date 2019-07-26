@@ -19,8 +19,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
+
 import com.jeecg.p3.dict.entity.ProjectErrorConfig;
 import com.jeecg.p3.system.def.SystemProperties;
+import com.jeecg.p3.system.util.Constants;
+import com.jeecg.p3.system.vo.LoginUser;
 
 /**
  * 签名拦截器 - H5网页访问
@@ -44,8 +47,16 @@ public class AccessSignInterceptor implements HandlerInterceptor {
 		String basePath = request.getContextPath();
 		request.setAttribute("basePath", basePath);
 		if (oConvertUtils.isNotEmpty(requestPath)) {
-			if (requestPath.indexOf("/back/") > -1 || requestPath.contains("checkUser")
-					|| requestPath.contains("login") || requestPath.contains("logout")) {
+			if (requestPath.contains("back")) {
+				LoginUser user = (LoginUser) request.getSession().getAttribute(Constants.OPERATE_WEB_LOGIN_USER);
+				if (user == null) {
+					String url = basePath + "/system/toLogin";
+					response.sendRedirect(url);
+					return false;
+				}
+				return true;
+			} else if (requestPath.contains("checkUser") || requestPath.contains("login")
+					|| requestPath.contains("logout")) {
 				return true;
 			} else if (requestUrl.indexOf(SIGN_PARAM_NAME + "=") != -1) {
 				String openid = request.getParameter("openid");
@@ -83,7 +94,7 @@ public class AccessSignInterceptor implements HandlerInterceptor {
 					}
 				}
 			}
-			String defaultUrl = basePath + "/system/noAuth.do";
+			String defaultUrl = basePath + "/system/noAuth";
 			logger.info("---------------SignInterceptor--------------没有权限---requestPath=" + requestPath);
 			redirectUrl404(requestPath, defaultUrl, response);
 			return false;

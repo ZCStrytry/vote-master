@@ -44,7 +44,7 @@ public class LoginInterceptor implements HandlerInterceptor {
 				LoginUser user = (LoginUser) request.getSession().getAttribute(Constants.OPERATE_WEB_LOGIN_USER);
 				if (user == null) {
 					logger.info("---------------AuthInterceptor--------------登录用户信息获取失败！");
-					String url = basePath + "/system/toLogin.do";
+					String url = basePath + "/system/toLogin";
 					response.sendRedirect(url);
 					return false;
 				}
