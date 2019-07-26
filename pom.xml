@@ -8,8 +8,10 @@
 
 	<modules>
 		<module>jeewx-boot-base-system</module>
-		<module>jeewx-boot-module-cms</module>
-		<module>jeewx-boot-module-weixin</module>
+		<!--  
+			<module>jeewx-boot-module-cms</module>
+			<module>jeewx-boot-module-weixin</module>
+		-->
 	</modules>
 	
 	<repositories>
