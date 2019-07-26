@@ -79,7 +79,7 @@
 										                 #if($!{info.userTyp} == '1')
 										                	<a href="#" onclick="">活动信息</a>|
 							                				<a href="#" onclick="">支付配置</a>|
-							                				<a href="#" onclick="">业绩</a>|
+							                				<a href="#" onclick="javascript:doUrl('$!{basePath}/system/back/account/myAchieve?id=$!{info.id}')" >业绩</a>|
 						                					<a href="#" onclick="javascript:doUrl('$!{basePath}/system/back/account/update?id=$!{info.id}')" >修改</a>|
 							                				<a href="#" onclick="javascript:doInput('$!{basePath}/system/back/account/reset?id=$!{info.id}','设置新密码')" >重置密码</a>|
 							                				<a href="#" onclick="javascript:delData('$!{basePath}/system/back/account/delete?id=$!{info.id}')">删除</a>

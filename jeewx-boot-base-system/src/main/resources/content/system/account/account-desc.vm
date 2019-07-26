@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="$!{basePath}/plug-in/css/calender/simple-calendar.css">
+<style>
+.daily {
+    margin-top: 20px;
+    width: 90%;
+    height: 90%;
+    border: 1px solid #ccc;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+
+.daily td {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.day {
+    color: #2A2E36;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.zero {
+    color: #777;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+</style>
+
+
+#parse("content/base/back/common/head.vm")
+<body style='overflow:scroll;overflow-x:hidden'>
+	<div class="container bs-docs-container" style="width:100%;">
+		<div class="row">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<font size="3">$!{user.userName}的每日业绩</font>
+					<span style="margin-left:928px"></span>
+					<input type="hidden" id="id" name ="id" value="$!{user.id}"/>
+					<button type="button" class="btn btn-default" id="formReturn" data-dismiss="modal" onclick="doUrl('$!{basePath}/system/back/account/list')">返回账户信息</button>	
+				</div>
+				<div style="margin-top:30px;" class="form-group mno">
+				     <span style="margin-left:15px"></span>
+				     <font size="3">选择：</font>
+			         <select name="year" id="year" onChange="changeData();"> 
+			      		  #foreach($year in [2018..2019])
+							<option value="$year" #if($!{year} == $year) selected #end >$year</option>
+						  #end
+			      	 </select>
+			      	 <font size="3">年</font>
+				     <select name="month" id="month" onChange="changeData();"> 
+			      		  #foreach($months in [1..12])
+							<option value="$months" #if($!{month} == $months) selected #end >$months</option>
+						  #end
+			      	 </select>
+			      	 <font size="3">月</font>
+			      	 <span style="margin-left:875px"></span><font size="3">本月总业绩：</font><font color="red">0</font><font size="3">元</font>
+				</div>
+				<div class="panel-body">
+					<!--<div id='container'></div>-->
+					<table class="daily" id="daily">
+						<tbody>
+							
+						</tbody>
+					</table>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="$!{basePath}/plug-in/js/calender/simple-calendar.js"></script>
+<script type="text/javascript">
+	function changeData(){
+		$("#daily tbody").html("");
+		var year = $('#year').val();
+		var month = $('#month').val();
+		var id = $('#id').val();
+		$.ajax({
+	      url: '$!{basePath}/system/back/account/myAchieve?id='+id+'&year='+year+'&month='+month,
+	      cache: false,
+	      type:'post',
+		  //dataType: "html",
+	      success: function(data){
+	        console.log(data.obj);
+	        var list = data.obj;
+	        $("#daily").append(data.obj);
+	      },  
+	      error: function(data, status, e){
+	      	if(data.status == "401"){
+      			layeralert("没有权限！",0);
+				return;
+			}
+	      }
+	    });
+	} 
+	
+</script> 

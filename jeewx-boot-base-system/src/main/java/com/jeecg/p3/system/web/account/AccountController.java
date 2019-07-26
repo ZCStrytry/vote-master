@@ -3,7 +3,9 @@ package com.jeecg.p3.system.web.account;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -322,4 +324,80 @@ public class AccountController extends BaseController {
 		return j;
 	}
 
+	/**
+	 * myAchieve
+	 * 
+	 * @return
+	 */
+	@GetMapping(value = "myAchieve")
+	public void myAchieve(HttpServletResponse response, HttpServletRequest request, HttpSession seesion) {
+		try {
+			String id = request.getParameter("id");
+			String year = request.getParameter("year");
+			String month = request.getParameter("month");
+			if (StringUtil.isBlank(year)) {
+				year = LocalDate.now().getYear() + "";
+			}
+			if (StringUtil.isBlank(month)) {
+				month = LocalDate.now().getMonthValue() + "";
+			}
+			JwSystemUser user = this.accountService.queryById(Long.parseLong(id));
+			VelocityContext velocityContext = new VelocityContext();
+			String viewName = "system/account/account-desc.vm";
+			velocityContext.put("user", user);
+			velocityContext.put("year", year);
+			velocityContext.put("month", month);
+			ViewVelocity.view(request, response, viewName, velocityContext);
+		} catch (Exception e) {
+			log.error("出错", e);
+		}
+	}
+
+	/**
+	 * myAchieve
+	 * 
+	 * @return
+	 */
+	@PostMapping(value = "myAchieve")
+	@ResponseBody
+	public AjaxJson myAchievePost(HttpServletResponse response, HttpServletRequest request, HttpSession seesion) {
+		AjaxJson j = new AjaxJson();
+		try {
+			String id = request.getParameter("id");
+			String year = request.getParameter("year");
+			String month = request.getParameter("month");
+			if (StringUtil.isBlank(year)) {
+				year = LocalDate.now().getYear() + "";
+			}
+			if (StringUtil.isBlank(month)) {
+				month = LocalDate.now().getMonthValue() + "";
+			}
+			// JwSystemUser user =
+			// this.accountService.queryById(Long.parseLong(id));
+			if (month.length() != 2) {
+				month = "0" + month;
+			}
+			String date = year + "-" + month + "-01";
+			int days = LocalDate.parse(date).lengthOfMonth();
+
+			String str = "<tr>";
+			for (int i = 0; i < days; i++) {
+				if (i != 0 && i % 7 == 0) {
+					str = str + "</tr><tr>";
+				}
+				str = str + "<td><p class=\"day\">" + LocalDate.parse(date).plusDays(i) + "</p><p class=\"day\">" + i
+						* 100 + "</p></td>";
+			}
+			if (!str.endsWith("</tr>")) {
+				str = str + "</tr>";
+			}
+
+			j.setObj(str);
+		} catch (Exception e) {
+			log.error("出错", e);
+			j.setSuccess(false);
+			j.setMsg("查询出错");
+		}
+		return j;
+	}
 }
